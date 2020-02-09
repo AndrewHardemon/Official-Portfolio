@@ -36,9 +36,12 @@ body {
 #description { 
   background: url(../images/bgblank.png); opacity: 0.9;
   display: flex; 
-  height: 30rem;
-  width: 66rem;
+  /* height: 30rem; */
+  height: auto;
+  /* width: 66rem; */
+  width: auto;
   margin-bottom: 10px;
+  margin-top: -40px;
   justify-content: space-evenly;
 }
 
@@ -70,8 +73,8 @@ p{
   font-size: 20px;
   text-align: left;
   color: darkblue;
-  margin-top: -20px;
-  margin-left: 35px;
+  margin-top: -5px;
+  margin-left: 60px;
 }
 
 #p2{
@@ -79,8 +82,9 @@ p{
   font-size: 40px;
   text-align: center;
   color: black;
-  margin-top: -20px;
-  margin-left: 55px;
+  margin-top: -10px;
+  margin-left: 80px;
+  width: auto;
 }
 
 
@@ -121,9 +125,9 @@ nav {
   }
   #description { 
     height: auto;
-    width: 18rem;
+    width: auto;
     margin-bottom: 10px;
-    margin-left: 21px;
+    /* margin-left: 21px; */
     justify-content: space-evenly;
   }
 
@@ -131,7 +135,7 @@ nav {
     color: rgb(82, 0, 0);
     font-size: 30px;
     width: 280px;
-    margin-left: 5px;
+    margin-left: 25px;
   }
   
   #p1{
@@ -140,7 +144,7 @@ nav {
     text-align: center;
     color: rgb(15, 2, 88);
     margin-top: -23px;
-    margin-left: 18px;
+    margin-left: 35px;
     width: 280px;
   }
   
@@ -150,7 +154,7 @@ nav {
     text-align: center;
     color: black;
     margin-top: -20px;
-    margin-left: 33px;
+    margin-left: 55px;
     word-wrap: break-word;
     width: 280px;
   }
