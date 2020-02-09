@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'a_charming_font_expandedRg';
+  src: url('../fonts/achafexp-webfont.woff2') format('woff2'),
+       url('../fonts/achafexp-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  /* src: url(../fonts/Achafexp.ttf) format('truetype'); */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* background: url(../images/DarkBGPic.jpg); */
+  background: url(../images/darkwoods.jpg);
+}
+
+.jumbotron {
+  margin-top: 30px;
+  background: none;
+}
+
+/* Main Page Font */
+.display-4{
+  font-size: 100px;
+  font-weight: 500;
+  background: url(../images/bgblank.png); opacity: 0.9;
+}
+
+.lead{
+  font-size: 50px;
+  background: url(../images/bgblank.png); opacity: 0.9;
+}
+
+#description { 
+  background: url(../images/bgblank.png); opacity: 0.9;
+  display: flex; 
+  height: 30rem;
+  width: 66rem;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+
+
+/* H1-3 Tags */
+h1, h3 {
+  text-align: center;
+  font-family: 'a_charming_font_expandedRg';
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'a_charming_font_expandedRg';
+}
+
+p{
+  text-align: center;
+  font-family: 'a_charming_font_expandedRg';
+  font-size: 40px;
+}
+
+#p0{
+  color: darkred;
+}
+
+#p1{
+  font-family: 'Time-New-Roman';
+  font-size: 20px;
+  text-align: left;
+  color: darkblue;
+  margin-top: -20px;
+  margin-left: 35px;
+}
+
+#p2{
+  /* font-family: 'Time-New-Roman'; */
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  margin-top: -20px;
+  margin-left: 55px;
+}
+
+
+/* Nav Bar */
+nav {
+  background-color: black;
+  border: 5px ridge #046ad0;
+}
+
+.navbar-brand {
+  font-family: 'a_charming_font_expandedRg';
+  font-size: 30px;
+}
+
+/* Phone and Tablet Sizing */
+
+@media screen and (max-width: 768px) { 
+  nav {
+    flex-direction: column;
+  }
+  /* body {
+    background: url(../images/bg2md.png);
+  } */
+  #recImg{
+    display:none;
+  }
+  #recImg2{
+    display:block;
+  }
+}
+
+@media screen and (max-width: 576px) { 
+  /* body {
+    background: url(../images/bg2smL.png);
+  } */
+  .display-4 {
+    font-size: 75px;
+  }
+  .lead{
+    font-size: 40px;
+  }
+  .jumbotron {
+    margin: 15px 0 15px 0;
+  }
+
+}
+
+
+.conf-canvas{
+  position: absolute;
+  z-index: -1;
+}
+
+
