@@ -13,86 +13,87 @@
 
  <div id="main-container" class="flexcontainer">
     <section class="main-section">
-      <div class="card-columns">
+      <div class="card-columns" id="card-container">
         <!-- Start of Col 1 -->
         <div class="col-md-12" id="col1">
-        <div class="row">
-        <div class="card text-white bg-dark mb-3" style="width: 18rem; height: 28rem;">
-          <img src="/images/projects/Scrape-News.png" class="card-img-top" alt="Scrape the News">
-          <div class="card-body">
-            <h5 class="card-title">Scrape the News</h5>
-            <p class="card-text">A web app that grabs articles from NYtimes and lets a user comment</p>
-            <a href="https://scrape-the-news-atlas.herokuapp.com/" target="_blank" class="btn btn-primary">Check it out</a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="row">
-        <div class="card text-white bg-dark mb-3" style="width: 18rem; height: 28rem;">
-          <img src="/images/projects/Google-Book.png" class="card-img-top" alt="RPG Game">
-          <div class="card-body">
-            <h5 class="card-title">Google React Book List</h5>
-            <p class="card-text">Let's you search for Books using the Google API</p>
-            <a href="https://aeroatlas.github.io/RPG-Game/" target="_blank" class="btn btn-primary">Check it out</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- End of Col 1 -->
-
-    <!-- Start of Col 2 -->
-    <div class="col-md-12" id="col2">
-      <div class="row">
-        <div class="card text-white bg-dark mb-3" style="width: 18rem; height: 28rem;">
-          <img src="/images/projects/Project-SFW.png" class="card-img-top" alt="Project-SFW">
-            <div class="card-body">
-              <h5 class="card-title">Project SFW</h5>
-              <p class="card-text">A gamified lesson and quiz web app for companies to use</p>
-              <a href="https://aeroatlas.github.io/GifTastic/" class="btn btn-primary">Check it out</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="card text-white bg-dark mb-3" style="width: 18rem; height: 28rem;">
-              <img src="/images/projects/TriviaGamePic.png" class="card-img-top" alt="Trivia Game">
+          {{!-- Row 1 of Col 1 --}}
+          <div class="row">
+            <div class="card text-white bg-dark mb-3" style="width: 25rem;">
+              <img src="/images/projects/Project-SFW.png" height="300px" width="300px" class="card-img-top" alt="Project-SFW">
               <div class="card-body">
-                <h5 class="card-title">Trivia Game</h5>
-                <p class="card-text">A timed questionaire game. Guess the correct answer and see how many points you get</p>
-                <a href="https://aeroatlas.github.io/TriviaGame/" class="btn btn-primary">Check it out</a>
+                <h5 class="card-title">Gamified Company Testing Program</h5>
+                <p class="card-text">A gamified lesson and quiz web app with protected log in and charts for comparing results
+                </p>
+              </div>
+              <ul class="list-group list-group-flush list-group-item-dark">
+                <li class="list-group-item list-group-item-dark">Uses: React.js, MongoDB, Node.js, Chart.js, Bcrypt.js, HTML/CSS</li>
+                <li class="list-group-item list-group-item-dark">Role: React Pages, Front-End JavaScript, Functionality</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://project-sfw.herokuapp.com/" target="_blank" class="card-link">Live Site</a>
+                <a href="https://github.com/Azorse/Project-SFW" target="_blank" class="card-link">Github</a>
+              </div>
+            </div>
+
+            <div class="card text-white bg-dark mb-3" style="width: 25rem;">
+              <img src="/images/projects/Semi-Random-Reccs.png" height="300px" width="300px" class="card-img-top" alt="Semi-Random Recomendations">
+              <div class="card-body">
+                <h5 class="card-title">Semi-Random Reccs</h5>
+                <p class="card-text">A website for finding random movie or game recomendations using several APIs
+                </p>
+              </div>
+              <ul class="list-group list-group-flush list-group-item-dark">
+                <li class="list-group-item list-group-item-dark">Uses: JavaScript, AJAX, Jquery, Handlebars, MySQL, Bcrypt, HTML/CSS</li>
+                <li class="list-group-item list-group-item-dark">Role: Front-End JavaScript, AJAX, Jquery, Front-End/Back-End Connection</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://project2beta.herokuapp.com/" target="_blank" class="card-link">Live Site</a>
+                <a href="https://github.com/AeroAtlas/Project2Beta" target="_blank" class="card-link">Github</a>
               </div>
             </div>
           </div>
-        </div>
+        <!-- End of Col 1 -->
 
-
-        <div class="col-md-12">
+        <!-- Start of Col 2 -->
+        <div class="col-md-12" id="col2">
+          {{!-- Row 1 of Col 2 --}}
           <div class="row">
-          <div class="card text-white bg-dark mb-3" style="width: 18rem; height: 28rem;">
-            <img src="/images/projects/TrainActivityPic.png" class="card-img-top" alt="Train Activity">
+            <div class="card text-white bg-dark mb-3" style="width: 25rem;">
+              <img src="/images/projects/Scrape-News.png" height="300px" width="300px" class="card-img-top" alt="Scrape the News">
               <div class="card-body">
-                <h5 class="card-title">Train Activity</h5>
-                <p class="card-text">A website that calculates when the next train will arrive</p>
-                <a href="https://aeroatlas.github.io/Train-Activity/" class="btn btn-primary">Check it out</a>
+                <h5 class="card-title">Scrape the News</h5>
+                <p class="card-text">A web app that grabs articles from NYtimes and lets a user sign in and comment
+                </p>
               </div>
-          </div>
-          </div>
-
-          <div class="row">
-          <div class="card text-white bg-dark mb-3" style="width: 18rem; height: 28rem;">
-            <img src="/images/projects/Semi-Random-Reccs.png" class="card-img-top" alt="Random Movie Recomendations">
+              <ul class="list-group list-group-flush list-group-item-dark">
+                <li class="list-group-item list-group-item-dark">Uses: Cheerio, Axios, MySQL, Handlebars, JavaScript, Bootstrap, HTML/CSS</li>
+                <li class="list-group-item list-group-item-dark">Role: Self-made - All Front-End and Back-End Code</li>
+              </ul>
               <div class="card-body">
-                <h5 class="card-title">Random Movie Recommendations</h5>
-                <p class="card-text">A website for finding random movie or game recomendations</p>
-                <a href="https://project2beta.herokuapp.com/" class="btn btn-primary">Check it out</a>
+                <a href="https://scrape-the-news-atlas.herokuapp.com/" target="_blank" class="card-link">Live Site</a>
+                <a href="https://github.com/AeroAtlas/React-Google-Book-Search" target="_blank" class="card-link">Github</a>
               </div>
+            </div>
+
+            <div class="card text-white bg-dark mb-3" style="width: 25rem;">
+              <img src="/images/projects/Google-Book.png" height="300px" width="300px" class="card-img-top" alt="Google Book Search">
+              <div class="card-body">
+                <h5 class="card-title">Google React Book List</h5>
+                <p class="card-text">Let's you search for Books using the Google API and save them into a MongoDB database
+                </p>
+              </div>
+              <ul class="list-group list-group-flush list-group-item-dark">
+                <li class="list-group-item list-group-item-dark">Uses: React.js, MongoDB, Axios, Bootrap, Node.js, Google API, HTML/CSS</li>
+                <li class="list-group-item list-group-item-dark">Role: Self-made - All Front-End and Back-End Code</li>
+              </ul>
+              <div class="card-body">
+                <a href="https://aeroatlas.github.io/RPG-Game/" target="_blank" class="card-link">Live Site</a>
+                <a href="https://github.com/AeroAtlas/React-Google-Book-Search" target="_blank" class="card-link">Github</a>
+              </div>
+            </div>
           </div>
         </div>
-        </div>
-
-        </div>
+        {{!-- End of Col 2 --}}
     </section>
   </div>
   </div>
