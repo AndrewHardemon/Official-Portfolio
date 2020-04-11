@@ -58,6 +58,10 @@ body {
   min-height: calc(100vh - 70px);
 }
 
+#card-container {
+  margin-left: 450px;
+}
+
 .card-body{
   max-height: 215px;
   height: auto;
@@ -102,6 +106,9 @@ nav {
 @media screen and (max-width: 576px) { 
   body {
     background: url(../images/darkbgwood.jpg);
+  }
+  #card-container {
+    margin-left: 0px;
   }
   .display-4 {
     font-size: 75px;

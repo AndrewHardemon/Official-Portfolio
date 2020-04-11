@@ -57,37 +57,36 @@ h1, h3 {
 h2 {
   margin-bottom: 20px;
   text-align: center;
-  font-family: 'a_charming_font_expandedRg';
+  font-family: 'Times New Roman', Times, serif;
 }
 
 p{
   text-align: center; 
-  font-family: 'a_charming_font_expandedRg';
+  font-family: 'Times New Roman', Times, serif;
   font-size: 40px;
 }
 
 #p0{
   color: darkred;
-  margin-top: -5px;
-  margin-left: 100px;
+  font-size: 35px;
 }
 
 #p1{
   font-family: 'Time-New-Roman';
-  font-size: 20px;
+  font-size: 25px;
   text-align: left;
   color: darkblue;
   /* margin-top: -15px; */
-  margin-left: 60px;
+  margin-left: 50px;
 }
 
 #p2{
   /* font-family: 'Time-New-Roman'; */
-  font-size: 40px;
+  font-size: 33px;
   text-align: center;
   color: black;
   /* margin-top: -10px; */
-  margin-left: 80px;
+  
   width: auto;
 }
 
