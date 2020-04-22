@@ -71,6 +71,7 @@ body {
 }
 
 
+
 /* H1-3 Tags */
 h1, h3 {
   text-align: center;
@@ -81,6 +82,10 @@ h2 {
   margin-bottom: 20px;
   text-align: center;
   font-family: 'a_charming_font_expandedRg';
+}
+
+#fullCard{
+  width: 25rem;
 }
 
 /* Nav Bar */
@@ -116,6 +121,11 @@ nav {
   .lead{
     font-size: 40px;
   }
+  #fullCard{
+    width: 20rem;
+    margin-right: 1.5px;
+  }
+
   .card-body{
     max-height: 215px;
     background-color: black;
