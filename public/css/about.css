@@ -128,7 +128,38 @@ nav {
   }
 }
 
-
+@media screen and (max-width: 1200px) { 
+  nav {
+    flex-direction: column;
+  }
+  #p0{
+    color: darkred;
+    margin-top: -5px;
+    margin-left: 0px;
+    word-wrap: break-word;
+  }
+  
+  #p1{
+    font-family: 'Time-New-Roman';
+    font-size: 20px;
+    text-align: left;
+    color: darkblue;
+    /* margin-top: -15px; */
+    margin-left: 20px;
+    word-wrap: break-word;
+  }
+  
+  #p2{
+    /* font-family: 'Time-New-Roman'; */
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    /* margin-top: -10px; */
+    margin-left: 10px;
+    width: inherit;
+    word-wrap: break-word;
+  }
+}
 
 
 @media screen and (max-width: 768px) { 
@@ -152,7 +183,7 @@ nav {
   
   #p2{
     /* font-family: 'Time-New-Roman'; */
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
     color: black;
     /* margin-top: -10px; */
