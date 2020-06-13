@@ -103,31 +103,6 @@ nav {
 }
 
 /* Phone and Tablet Sizing */
-@media screen and (max-width: 1200px) {
-  #p0{
-    color: darkred;
-    margin-top: -5px;
-    margin-left: 10px;
-  }
-  
-  #p1{
-    font-family: 'Time-New-Roman';
-    font-size: 20px;
-    text-align: left;
-    color: darkblue;
-  }
-  
-  #p2{
-    /* font-family: 'Time-New-Roman'; */
-    font-size: 40px;
-    text-align: center;
-    color: black;
-    /* margin-top: -10px; */
-    margin-left: -10px;
-    width: auto;
-  }
-}
-
 @media screen and (max-width: 1200px) { 
   nav {
     flex-direction: column;
@@ -155,8 +130,8 @@ nav {
     text-align: center;
     color: black;
     /* margin-top: -10px; */
-    margin-left: 10px;
-    width: inherit;
+    margin-left: 20px;
+    width: 95%;
     word-wrap: break-word;
   }
 }
