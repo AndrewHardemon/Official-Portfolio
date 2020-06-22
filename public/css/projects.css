@@ -66,13 +66,13 @@ body {
 /* H1-3 Tags */
 h1, h3 {
   text-align: center;
-  font-family: 'times-new-roman';
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h2 {
   margin-bottom: 20px;
   text-align: center;
-  font-family: 'times-new-roman';
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #fullCard{
@@ -86,7 +86,8 @@ nav {
 }
 
 .navbar-brand {
-  font-family: 'a_charming_font_expandedRg';
+  /* font-family: 'a_charming_font_expandedRg'; */
+  font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
 }
 
@@ -103,10 +104,14 @@ nav {
   body {
     background: url(../images/darkbgwood.jpg);
   }
+  .navbar-brand {
+    font-size: 19px;
+  }
   #card-container {
     margin-left: 0px;
   }
   .display-4 {
+    margin-top: -20px;
     font-size: 60px;
   }
   .lead{
