@@ -1,5 +1,7 @@
 # Official-Portfolio
 My official portfolio to demonstrate my projects
+Created by Andrew Hardemon
+Live site: https://official-portfolio-atlas.herokuapp.com/
 
 ### Uses Express, Handlebars, JavaScript, CSS/HTML, Mobile Responsive
 
