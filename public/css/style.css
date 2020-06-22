@@ -21,9 +21,31 @@ body {
 }
 
 /* Main Page Font */
+#indexIntro{
+  background: url(../images/bgblank.png); opacity: 1;
+  width: inherit;
+  outline-color: black;
+  outline-style: solid;
+  margin-top: -30px;
+}
+
+#contactInfo{
+  background: url(../images/bgblank.png); opacity: 1;
+  width: inherit;
+  height: 70%;
+  outline-color: black;
+  outline-style: solid;
+}
+
+#contactInfoTag{
+  text-align: left;
+}
+
 .display-4{
   font-size: 100px;
   font-weight: 500;
+  color:black;
+  /* background: url(../images/congruent_outline.png); opacity: 1; */
 }
 
 .lead{
@@ -31,33 +53,26 @@ body {
   background: url(../images/bgblank.png); opacity: 0.9;
 }
 
-#recLink{
-  /* background: url(../images/projectImg.png);  */
-  /* border: 5px solid black;
-  margin: 0 0 15px 0; */
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
 #recImg{
   /* background: url(../images/projectImg.png);  */
   border: 5px solid black;
-  margin: 0 0 15px 0;
+  /* margin: 0 0 15px 0; */
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
   /* object-fit: cover; */
 }
 
-#recImg2{
-  border: 5px solid black;
-  /* margin: 0 0 15px 0; */
-  width: 100%;
-  height: 100%;
-  display: none;
-  /* object-fit: cover; */
+/* Link color change */
+.linkText{
+  color: black;
 }
+
+/* Title Text */
+#titleText{
+  font-size: 80px;
+}
+
 
 #project { 
   display: flex; 
@@ -67,17 +82,23 @@ body {
   font-size: 24px;
 }
 
+#contactInfo{
+  background-color: aliceblue;
+  width: inherit;
+  margin-top: -50px;
+}
+
 
 /* H1-3 Tags */
 h1, h3 {
   text-align: center;
-  font-family: 'a_charming_font_expandedRg';
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h2 {
   margin-bottom: 20px;
   text-align: center;
-  font-family: 'a_charming_font_expandedRg';
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* Nav Bar */
@@ -87,8 +108,10 @@ nav {
 }
 
 .navbar-brand {
-  font-family: 'a_charming_font_expandedRg';
+  /* font-family: 'a_charming_font_expandedRg'; */
+  font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
+
 }
 
 /* Phone and Tablet Sizing */
@@ -103,8 +126,25 @@ nav {
   #recImg{
     display:none;
   }
-  #recImg2{
-    display:block;
+  .display-4 {
+    font-size: 35px;
+  }
+  .lead{
+    font-size: 20px;
+  }
+  #indexIntro{
+    margin-top: -50px;
+  }
+  #contactInfo{
+    height:50%;
+    margin-top: -50px;
+  }
+  #contactInfoTag{
+    font-size: 20px;
+    word-wrap: break-word;
+  }
+  #titleText{
+    font-size: 50px;
   }
 }
 
@@ -112,24 +152,20 @@ nav {
   body {
     background: url(../images/bg2smL.png);
   }
-  .display-4 {
-    font-size: 75px;
+  .navbar-brand {
+    font-size: 19px;
   }
-  .lead{
-    font-size: 40px;
-  }
-  /* #recImg{
-    display:none;
-  }
-  #recImg2{
-    display:block;
-  } */
   .jumbotron {
     margin: 15px 0 15px 0;
   }
-
+  #indexIntro{
+    margin-top: -20px;
+  }
+  #contactInfo{
+    height:50%;
+    margin-top: -40px;
+  }
 }
-
 
 .conf-canvas{
   position: absolute;
