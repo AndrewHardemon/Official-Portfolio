@@ -98,7 +98,7 @@ nav {
 }
 
 .navbar-brand {
-  font-family: 'a_charming_font_expandedRg';
+  font-family: 'Times New Roman', Times, serif;
   font-size: 30px;
 }
 
@@ -141,6 +141,7 @@ nav {
   nav {
     flex-direction: column;
   }
+  
   #p0{
     color: darkred;
     margin-top: -5px;
@@ -171,11 +172,16 @@ nav {
   /* body {
     background: url(../images/bg2smL.png);
   } */
+  .navbar-brand {
+    font-size: 19px;
+  }
   .display-4 {
-    font-size: 73px;
+    /* font-size: 73px; */
+    font-size: 40px;
+    width: inherit;
   }
   .lead{
-    font-size: 40px;
+    font-size: 25px;
   }
   .jumbotron {
     margin: 15px 0 15px 0;
@@ -199,7 +205,7 @@ nav {
 
   #p0{
     color: rgb(82, 0, 0);
-    font-size: 30px;
+    font-size: 25px;
     width: 280px;
     margin-left: 25px;
   }
@@ -208,18 +214,16 @@ nav {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     text-align: center;
-    color: rgb(15, 2, 88);
-    margin-top: -23px;
+    color: rgb(15, 2, 88); 
     margin-left: 35px;
     width: 280px;
   }
   
   #p2{
     /* font-family: 'Time-New-Roman'; */
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     color: black;
-    margin-top: -20px;
     margin-left: 55px;
     word-wrap: break-word;
     width: 280px;
