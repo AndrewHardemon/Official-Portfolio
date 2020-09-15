@@ -1,32 +1,22 @@
 <link rel="stylesheet" href="/css/projects.css">
+
+
 <div class="container" id="projects">
   <div class="row">
-    <!--start of row one-->
-    <div class="col">
-      <!--start of row one column-->
+    <div class="col-md-12">
       <div class="jumbotron jumbotron-fluid jumbotron-dark">
-        <div class="container">
           <h1 class="display-4">My Projects</h1>
-        </div>
       </div>
-      <!--end of jumbotron-->
     </div>
-    <!--end of row one column-->
   </div>
-  <!--end of row one-->
 
-  <div id="main-container" class="flexcontainer">
-    <section class="main-section">
-      <div class="card-columns" id="card-container">
-        {{!-- Row 1 --}}
-        <div class="row">
-          {{!-- Column 1 --}}
-          <div class="col-md-12" id="col1">
-            {{!-- Row A of Col 1 --}}
+
+    <section class="main-section" id="main-container" >
+
+
             <div class="row">
-              {{!-- Column for Row A1 --}}
-              <div class="col-md-6" id="col1">
-                <div class="card text-white bg-dark mb-3" id="fullCard" >
+              <div class="col-md-6 myCol " id="col1">
+                <div class="card text-white bg-dark fCard" id="fullCard1">
                   <img src="/images/projects/Project-SFW.png" height="300px" width="300px" class="card-img-top"
                     alt="Project-SFW">
                   <div class="card-body">
@@ -47,13 +37,9 @@
                   </div>
                 </div>
               </div>
-            </div>
 
-            {{!-- Row B of Col 1 --}}
-            <div class="row">
-              {{!-- Column for Row B1 --}}
-              <div class="col-md-6" id="col1">
-                <div class="card text-white bg-dark mb-3" id="fullCard">
+              <div class="col-md-6 myCol" id="col2">
+                <div class="card text-white bg-dark fCard" id="fullCard2">
                   <img src="/images/projects/Semi-Random-Reccs.png" height="300px" width="300px" class="card-img-top"
                     alt="Semi-Random Recomendations">
                   <div class="card-body">
@@ -73,76 +59,61 @@
                   </div>
                 </div>
               </div>
+
             </div>
 
-          <!-- End of Col 1 -->
-          </div>
-        <!-- End of Row 1 -->
-        </div>
-
-        {{!-- Start of Row 2 --}}
-        <div class="row">
-          {{!-- Start of Col 2 --}}
-          <div class="col-md-12" id="col2">
-            {{!-- Row A of Col 2 --}}
+         
             <div class="row">
-              {{!-- Column for Row A2 --}}
-              <div class="col-md-6" id="col2">
-                <div class="card text-white bg-dark mb-3" id="fullCard">
+              <div class="col-md-6 myCol" id="col3">
+                <div class="card text-white bg-dark fCard" id="fullCard3">
                   <img src="/images/projects/Text-Based-RPG.png" height="300px" width="300px" class="card-img-top"
                     alt="Text-Based-RPG">
                   <div class="card-body">
                     <h5 class="card-title">Text-Based-RPG</h5>
-                    <p class="card-text">A React web app for a Text RPG. Work in progress. Saves stats and story progress/choices
+                    <p class="card-text">A React web app for a Text RPG. Work in progress. Saves stats and story
+                      progress/choices
                     </p>
                   </div>
                   <ul class="list-group list-group-flush list-group-item-dark">
-                    <li class="list-group-item list-group-item-dark">Uses: React, Express, Node.js, Bootstrap, Flexbox, MongoDB, HTML/CSS</li>
+                    <li class="list-group-item list-group-item-dark">Uses: React, Express, Node.js, Bootstrap, Flexbox,
+                      MongoDB, HTML/CSS</li>
                     <li class="list-group-item list-group-item-dark">Role: Self-made - All Front-End and Back-End Code
                     </li>
                   </ul>
                   <div class="card-body">
                     <a href="https://text-based-rpg-atlas.herokuapp.com/" target="_blank" class="card-link">Live
                       Site</a>
-                    <a href="https://github.com/AeroAtlas/text-based-rpg" target="_blank"
-                      class="card-link">Github</a>
+                    <a href="https://github.com/AeroAtlas/text-based-rpg" target="_blank" class="card-link">Github</a>
+                  </div>
+                </div>
+              </div>
+
+              {{!-- Column for Row B2 --}}
+              <div class="col-md-6 myCol" id="col4">
+                <div class="card text-white bg-dark fCard" id="fullCard4">
+                  <img src="/images/projects/Clicky-Game.png" height="300px" width="300px" class="card-img-top"
+                    alt="Clicky-Game">
+                  <div class="card-body">
+                    <h5 class="card-title">Clicky Game</h5>
+                    <p class="card-text">A React web app where you log in, start game, and click images to get a
+                      highscore
+                    </p>
+                  </div>
+                  <ul class="list-group list-group-flush list-group-item-dark">
+                    <li class="list-group-item list-group-item-dark">Uses: React.js, MongoDB, Axios, Node.js, Express,
+                      Bootstrap,
+                      Node.js, HTML/CSS</li>
+                    <li class="list-group-item list-group-item-dark">Role: Self-made - All Front-End and Back-End
+                      Code</li>
+                  </ul>
+                  <div class="card-body">
+                    <a href="https://memory-game-atlas.herokuapp.com/" target="_blank" class="card-link">Live Site</a>
+                    <a href="https://github.com/AeroAtlas/Clicky-Game" target="_blank" class="card-link">Github</a>
                   </div>
                 </div>
               </div>
             </div>
-
-          {{!-- Row B of Col 2 --}}
-          <div class="row">
-            {{!-- Column for Row B2 --}}
-            <div class="col-md-6" id="col2">
-              <div class="card text-white bg-dark mb-3" id="fullCard">
-                <img src="/images/projects/Clicky-Game.png" height="300px" width="300px" class="card-img-top"
-                  alt="Clicky-Game">
-                <div class="card-body">
-                  <h5 class="card-title">Clicky Game</h5>
-                  <p class="card-text">A React web app where you log in, start game, and click images to get a highscore
-                  </p>
-                </div>
-                <ul class="list-group list-group-flush list-group-item-dark">
-                  <li class="list-group-item list-group-item-dark">Uses: React.js, MongoDB, Axios, Node.js, Express, Bootstrap,
-                    Node.js, HTML/CSS</li>
-                  <li class="list-group-item list-group-item-dark">Role: Self-made - All Front-End and Back-End
-                    Code</li>
-                </ul>
-                <div class="card-body">
-                  <a href="https://memory-game-atlas.herokuapp.com/" target="_blank" class="card-link">Live Site</a>
-                  <a href="https://github.com/AeroAtlas/Clicky-Game" target="_blank"
-                    class="card-link">Github</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        {{!-- End of Column 2 --}}
-        </div>
-      {{!-- End of Row 2 --}}
-      </div>
-
+       
     </section>
-  </div>
+
 </div>
