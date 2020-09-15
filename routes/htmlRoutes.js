@@ -1,20 +1,21 @@
-//var path = require("path");
+const express = require('express');
+const router = express.Router();
 
-module.exports = function(app) {
 
-  app.get("/", function(req, res) {
-    res.render('index');
-  });
+router.get("/", function(req, res, next) {
+  res.render('index');
+});
 
-  app.get("/about-me", function(req, res) {
-    res.render("about");
-  });
+router.get("/about-me", function(req, res, next) {
+  res.render("about");
+});
 
-  app.get("/projects", function(req, res) {
-    res.render("projects");
-  });
-  
-  app.get("*", function(req, res) {
-    res.render("404");
-  });
-};
+router.get("/projects", function(req, res, next) {
+  res.render("projects");
+});
+
+router.get("*", function(req, res, next) {
+  res.render("404");
+});
+
+module.exports = router;
