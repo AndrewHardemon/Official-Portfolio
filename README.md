@@ -15,6 +15,6 @@ This is my portfolio website. Used to show off a few of my projects and so that 
 
 3. Projects: A page of 4 of my best projects.
 
-![MainPage](https://github.com/AeroAtlas/Official-Portfolio/ReadMeImages/MainPage.PNG)
-![About Me](https://github.com/AeroAtlas/Official-Portfolio/ReadMeImages/AboutMe.PNG)
-![My Projects](https://github.com/AeroAtlas/Official-Portfolio/ReadMeImages/MyProjects.PNG)
+![MainPage](https://github.com/AeroAtlas/Official-Portfolio/blob/master/ReadMeImages/MainPage.PNG)
+![About Me](https://github.com/AeroAtlas/Official-Portfolio/blob/master/ReadMeImages/AboutMe.PNG)
+![My Projects](https://github.com/AeroAtlas/Official-Portfolio/blob/master/ReadMeImages/MyProjects.PNG)
