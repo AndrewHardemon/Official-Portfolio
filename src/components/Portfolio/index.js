@@ -3,12 +3,13 @@ import Project from "./Project";
 import vamp from "../../assets/projects/vamp-desktop.png"
 import sfw from "../../assets/projects/safe-for-work.png"
 import recommendations from "../../assets/projects/semi-random-recommendations.png"
+import adventure from "../../assets/projects/text-based-rpg.png"
 
 function Portfolio(){
   const [projects, setProjects] = useState([
     {
       name: "vamp-desktop",
-      description: "A Real Time Chat Application",
+      description: "Real Time Chat Application",
       technologies: "MERN/socket.io/Electron",
       link: "https://vamp-desktop.herokuapp.com/",
       repo: "https://github.com/AeroAtlas/Vamp-Desktop",
@@ -16,7 +17,7 @@ function Portfolio(){
     },
     {
       name: "safe-for-work",
-      description: "A Testing System for Employees",
+      description: "Harry Potter Themed Testing System for Employees",
       technologies: "MERN/Chart.js/Passport",
       link: "https://project-sfw.herokuapp.com/",
       repo: "https://github.com/Azorse/Project-SFW",
@@ -24,19 +25,19 @@ function Portfolio(){
     },
     {
       name: "semi-random-recommendations",
-      description: "A Random Movie and Game Generator",
+      description: "Random Movie and Game Generator",
       technologies: "MERN/socket.io/Electron",
       link: "https://project2beta.herokuapp.com/",
       repo: "https://github.com/AeroAtlas/Semi-Random-Recommendations",
       image: recommendations
     },
     {
-      name: "vamp-desktop",
-      description: "A Real Time Chat Application",
-      technologies: "MERN/socket.io/Electron",
-      link: "https://vamp-desktop.herokuapp.com/",
-      repo: "https://github.com/AeroAtlas/Vamp-Desktop",
-      image: vamp
+      name: "text-based-rpg",
+      description: "React Text Adventure Game",
+      technologies: "MERN/GraphQL",
+      link: "https://text-based-rpg-atlas.herokuapp.com/",
+      repo: "https://github.com/AeroAtlas/text-based-rpg",
+      image: adventure
     },
   ])
 
