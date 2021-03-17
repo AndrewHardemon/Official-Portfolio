@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 
 
+
 function App() {
   //possibily capitalize the first letter here instead
   const [pages] = useState([

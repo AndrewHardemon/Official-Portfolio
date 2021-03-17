@@ -1,11 +1,13 @@
 import React from "react";
+import profile from "../../assets/profile/Andrew.jpeg"
 
 function About(){
   return (
+    <>
     <section className="my-5">
       <div className="my-2">
-        <div className="profile-img my-5">
-        <i className="fas fa-user-circle" style={{ fontSize: "96px" }}></i>
+        <div className="my-5">
+        <img sclassNam2e="profile-img" src={profile} style={{ height: "200px", width: "auto", borderRadius:"100px" }}></img>
         <p>Hello, my name is Andrew Hardemon and I'm a Full Stack Web Developer</p>
         <p>
         I've been programming for several years. It's a long time passion of mine, and I'm always looking to learn new languages, frameworks, and technologies.
@@ -18,6 +20,58 @@ function About(){
         </div>
       </div>
     </section>
+    <section className="my-5">
+    <div className="my-2">
+    <p>
+      Download my <a href="https://www.linkedin.com/">resume</a>
+      </p>
+      <div style={{display:"grid", gridTemplateColumns: "33% 33% 33%", gridTemplateRows:"10% 90%"}}>
+        <div style={{gridColumnStart:"1", gridColumnEnd:"2", gridRowStart:"1", gridRowEnd:"2"}}>
+          <h3>Front-end Proficiencies</h3>
+          <ul className="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>jQuery</li>
+            <li>Responsive Design</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div style={{gridColumnStart:"2", gridColumnEnd:"3", gridRowStart:"1", gridRowEnd:"2"}}>
+          <h3>Back-end Proficiencies</h3>
+          <ul className="skills">
+            <li>REST APIs</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MySQL, Sequelize</li>
+            <li>MongoDB, Mongoose</li>
+            <li>REST</li>
+            <li>GraphQL</li>
+            <li>Authentication</li>
+            <li>Deno</li>
+          </ul>
+        </div>
+        <div style={{gridColumnStart:"3", gridColumnEnd:"4", gridRowStart:"1", gridRowEnd:"2"}}>
+          <h3>Other Skills and Technologies</h3>
+          <ul className="skills">
+            <li>Git</li>
+            <li>Linux</li>
+            <li>Bash</li>
+            <li>Github</li>
+            <li>Test Driven Development</li>
+            <li>Heroku, Firebase</li>
+            <li>Java, Scala</li>
+            <li>C#, F#</li>
+            <li>Haskell</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  </>
   )
 }
 

@@ -3,12 +3,13 @@ import { changeToStandardFormat } from '../../../utils/helpers';
 
 function Project({ project }) {
 
-  const { name, repo, link, description } = project;
+  const { name, repo, link, description, image } = project;
 
   return (
     <div className="project" key={name}>
       <img
-        // src={require(`../../assets/projects/${name}.jpg`)}
+        // src={require(`../../../assets/projects/${name}.png`)}
+        src={image}
         alt={changeToStandardFormat(name)}
         className="project-bg"
       />
