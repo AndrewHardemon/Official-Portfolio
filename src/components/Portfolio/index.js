@@ -11,11 +11,11 @@ function Portfolio(){
       repo: "https://github.com/AeroAtlas/Vamp-Desktop"
     },
     {
-      name: "vamp-desktop",
-      description: "A Real Time Chat Application",
-      technologies: "MERN/socket.io/Electron",
-      link: "https://vamp-desktop.herokuapp.com/",
-      repo: "https://github.com/AeroAtlas/Vamp-Desktop"
+      name: "safe-for-work",
+      description: "A Testing System for Employees",
+      technologies: "MERN/Chart.js/Passport",
+      link: "https://project-sfw.herokuapp.com/",
+      repo: "https://github.com/Azorse/Project-SFW"
     },
     {
       name: "vamp-desktop",
@@ -34,10 +34,16 @@ function Portfolio(){
   ])
 
   return (
-    <div className="flex-row">
-      {projects.map((project, index) => (
-        <Project project={project} key={index}/>
-      ))}
+    <div>  
+      <div className="flex-row">
+        {projects.map((project, index) => (
+          <Project project={project} key={index}/>
+        ))}
+      </div>
+      <span>
+        <button onClick={() => setProjects(projects.concat(projects.shift()))}>Prev</button>
+        <button onClick={() => setProjects([projects.pop()].concat(projects))}>Next</button>
+      </span>
     </div>
   )
 }

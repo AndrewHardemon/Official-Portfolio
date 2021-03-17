@@ -6,8 +6,9 @@ function About(){
       <div className="my-2">
         <div className="profile-img my-5">
         <i className="fas fa-user-circle" style={{ fontSize: "96px" }}></i>
+        <p>Hello, my name is Andrew Hardemon and I'm a Full Stack Web Developer</p>
         <p>
-        Been programming for several years. It's a long time passion of mine, and I'm always looking to learn new languages, frameworks, and technologies.
+        I've been programming for several years. It's a long time passion of mine, and I'm always looking to learn new languages, frameworks, and technologies.
         I studied CS at Eastern Kentucky University, and I am a certified Full Stack Web Developer from the University of Arizona. 
         </p>
         <p>
