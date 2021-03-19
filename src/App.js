@@ -15,8 +15,8 @@ function App() {
   const [pages] = useState([
     { name: "about me", component: <About/>},
     { name: "portfolio", component: <Portfolio/>},
-    // { name: "contact", component: <Contact/>},
-    // { name: "resume", component: <Resume/>}
+    { name: "contact", component: <Contact/>},
+    { name: "resume", component: <Resume/>}
   ]);
   
   const [currentPage, setCurrentPage] = useState(pages[0]);
