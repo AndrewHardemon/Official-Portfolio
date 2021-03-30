@@ -23,7 +23,7 @@ function About(){
     <section className="my-5">
     <div className="my-2">
     <p>
-      Download my <a href="https://www.linkedin.com/">resume</a>
+      Download my <a href="../../assets/profile/Andrew-Hardemon-Web-Development-TA-Resume.pdf" download="Andrew-Hardemon-Web-Development-TA-Resume.pdf">resume</a>
       </p>
       <div style={{display:"grid", gridTemplateColumns: "33% 33% 33%", gridTemplateRows:"10% 90%"}}>
         <div style={{gridColumnStart:"1", gridColumnEnd:"2", gridRowStart:"1", gridRowEnd:"2"}}>
