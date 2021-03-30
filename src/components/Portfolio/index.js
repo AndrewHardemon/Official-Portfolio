@@ -43,15 +43,15 @@ function Portfolio(){
 
   return (
     <div>  
-      <div className="flex-row">
+      <div className="flex-row" style={{backgroundColor:"rgba(68,71,90,0.6)", border: "2px black solid", marginBottom:"10px"}}>
         {projects.map((project, index) => (
           <Project project={project} key={index}/>
         ))}
       </div>
-      <span>
+      <div style={{display:"flex", justifyContent:"center"}}>
         <button onClick={() => setProjects(projects.concat(projects.shift()))}>Prev</button>
         <button onClick={() => setProjects([projects.pop()].concat(projects))}>Next</button>
-      </span>
+      </div>
     </div>
   )
 }
