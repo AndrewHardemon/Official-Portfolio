@@ -4,10 +4,11 @@ import React, { useState } from "react";
 
 function Extra() {
 
-  const [fizz, setFizz] = useState([])
+  const [fizz, setFizz] = useState([1,2,"Fizz",4,"Buzz"])
   const [data, setData] = useState({
     names: "",
-    nums: "" 
+    nums: "",
+    length: "100"
   })
 
   const fizzbuzz = (num, opt) => {
@@ -15,21 +16,53 @@ function Extra() {
   }
 
   const generateFizzBuzz = () => {
-    const num = 100
-    const arr = [...Array(num)].map((_,i) => i+1)
-    const opt = [{word: "Fizz", num: 3}, {word: "Buzz", num: 5},{word: "Dazz", num: 7}]
+    const length = (isNaN(+data.length) && data.length.length) ? 100 : +data.length
+    if(length > 1000){
+      length = 1000
+    }
+    const arr = [...Array(length)].map((_,i) => i+1)
+    const names = data.names.split(",")
+    const nums = data.nums.split(",")
 
-    setFizz(fizzbuzz(arr,opt))
+    let opt = []
+    for(let i = 0; i < names?.length; i++){
+      const obj = {word: names[i].trim(), num: +nums[i].trim()} 
+      opt.push(obj)
+    }
+
+    if(!opt.length){
+      opt = [{word: "Fizz", num: 3}, {word: "Buzz", num: 5},{word: "Dazz", num: 7}]
+    }
+
+    const results = fizzbuzz(arr,opt)
+    setFizz(results)
+  }
+
+  const handleChange = (e) => {
+    console.log(e.target.value)
+    setData({ ...data, [e.target.name]: e.target.value })
   }
 
   return (
     <>
-    <input name="options"/>
-    <input name="nums" value=""/>
-    <button onSubmit={generateFizzBuzz}>Get Results</button>
     <div>
-      {fizz.map(fb => (
-      <p>{fb}</p>
+      <label for="names">Names</label>
+      <input name="names"value={data.names} placeholder="Fizz,Buzz,Dazz" onChange={handleChange}/>
+    </div>
+    <div>
+      <label for="nums">Numbers</label>
+      <input name="nums" value={data.nums} placeholder="3,5,7" onChange={handleChange}/>
+    </div>
+    <div>
+      <label for="length">Length</label>
+      <input name="length" value={data.length} placeholder="100" onChange={handleChange}/>
+    </div>
+    <button onClick={generateFizzBuzz}>Get Results</button>
+    <div>
+      {fizz.map((fb,i) => (
+        (i !== fizz.length-1) 
+          ? <span style={isNaN(+fb) ? {color:"yellow"} : {color:"white"}}>{fb}, </span> 
+          : <span style={isNaN(+fb) ? {color:"yellow"} : {color:"white"}}>{fb}</span>
     ))}
     </div>
     </>
