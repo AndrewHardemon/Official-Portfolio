@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import About from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import Resume from './components/Resume';
+import Extra from './components/Extra';
 
 
 
@@ -15,8 +15,8 @@ function App() {
   const [pages] = useState([
     { name: "about me", component: <About/>},
     { name: "portfolio", component: <Portfolio/>},
-    // { name: "contact", component: <Contact/>},
-    // { name: "resume", component: <Resume/>}
+    { name: "contact", component: <Contact/>},
+    { name: "extra", component: <Extra/>}
   ]);
   
   const [currentPage, setCurrentPage] = useState(pages[0]);
