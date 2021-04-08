@@ -38,7 +38,7 @@ function Contact() {
   return (
     <section>
       <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
+        <div style={{display: "grid", gridTemplateColumns: "20% 50%"}}>
           <label for="name">Name:</label>
           <input
             type="text"
@@ -47,7 +47,7 @@ function Contact() {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div style={{display: "grid", gridTemplateColumns: "20% 50%"}}>
           <label for="email">Email address:</label>
           <input
             type="email"
@@ -56,7 +56,7 @@ function Contact() {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div style={{display: "grid", gridTemplateColumns: "20% 50%"}}>
           <label for="subject">Subject:</label>
           <input
             type="text"
@@ -65,7 +65,7 @@ function Contact() {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div style={{display: "grid", gridTemplateColumns: "20% 50%"}}>
           <label for="message">Message:</label>
           <textarea
             name="message"
@@ -79,7 +79,9 @@ function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )} */}
-        <button type="submit">Submit</button>
+        <div style={{display:"grid", width: "87%"}}>
+        <button style={{marginTop: "10px"}} type="submit">Submit</button>
+        </div>
       </form>
     </section>
   )
