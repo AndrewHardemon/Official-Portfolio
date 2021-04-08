@@ -45,15 +45,15 @@ function Extra() {
 
   return (
     <>
-    <div>
+    <div style={{display: "grid", gridTemplateColumns: "5% 50%"}}>
       <label for="names">Names</label>
       <input name="names"value={data.names} placeholder="Fizz,Buzz,Dazz" onChange={handleChange}/>
     </div>
-    <div>
+    <div style={{display: "grid", gridTemplateColumns: "5% 50%"}}>
       <label for="nums">Numbers</label>
       <input name="nums" value={data.nums} placeholder="3,5,7" onChange={handleChange}/>
     </div>
-    <div>
+    <div style={{display: "grid", gridTemplateColumns: "5% 50%"}}>
       <label for="length">Length</label>
       <input name="length" value={data.length} placeholder="100" onChange={handleChange}/>
     </div>
