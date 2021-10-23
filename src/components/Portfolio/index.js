@@ -47,7 +47,7 @@ function Portfolio(){
 
   return (
     <div>  
-      <div className="flex-row" style={{backgroundColor:"rgba(68,71,90,0.6)", border: "2px black solid", marginBottom:"10px"}}>
+      <div className="flex-row" style={{backgroundColor:"rgba(68,71,90,0.6)", border: "2px black solid", marginBottom:"10px", width: "88vw"}}>
         <div style={{height: "inherit", width: "33rem", display:"inline-block"}}>
           <Project project={projects[0]} extra={true}/>
         </div>

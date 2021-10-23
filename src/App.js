@@ -26,10 +26,12 @@ function App() {
       <Header>
         <Nav pages={pages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </Header>
+      <div class="main_container">
+        <Footer />
       <main>
         <Page currentPage={currentPage}></Page>
       </main>
-      <Footer />
+      </div>
     </div>
   );
 }

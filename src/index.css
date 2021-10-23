@@ -115,10 +115,11 @@ nav {
 }
 */
 main {
-  margin: 0 5%;
+  margin: 0 auto;
   max-width: 90%;
-  padding: 50px 30px;
+  padding: 50px 0px;
 }
+
 :root {
   --primary: #8c54ff;
   --secondary: #31343D;
@@ -488,7 +489,10 @@ textarea {
   display: grid;
   grid-template-columns: 6fr 3fr 4fr;
 }
-
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr 50fr;
+}
 /* #main_header{
   display: none;
 } */
