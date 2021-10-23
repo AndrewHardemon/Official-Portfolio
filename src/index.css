@@ -168,8 +168,8 @@ h6 {
 }
 
 h1 {
-  font-size: 5rem;
-  margin: 50px 20px;
+  font-size: 3vw;
+  margin: 2vw 20px;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -307,8 +307,8 @@ header img {
 nav {
   position: relative;
   font-family: 'Fira Sans', sans-serif;
-  font-size: 2.5rem;
-  margin: 30px 20px;
+  font-size: 2vw;
+  margin: 1vw 20px;
 }
 
 nav a:hover {
@@ -492,6 +492,7 @@ textarea {
 .main_container {
   display: grid;
   grid-template-columns: 1fr 50fr;
+  margin-bottom: 0px;
 }
 /* #main_header{
   display: none;
@@ -511,3 +512,13 @@ input {
   flex: 0 0 200px;
   margin-left: 10px;
 } */
+/* @media(max-width: 1700px){
+  .main_header{
+    margin-bottom:0px
+  }
+} */
+@media screen and (max-width: 1650px) {
+  h1{
+    margin-bottom:0px
+  }
+}
