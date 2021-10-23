@@ -10,7 +10,7 @@ function Footer(){
   ]
 
   return (                                                                                                                /* width:"269px" */
-    <footer className="flex-row px-1" style={{position:"absolute", bottom:0, left:0, marginLeft: "auto", marginRight:"auto", width:"100px", height:"85%", backgroundColor:"black"}}>
+    <footer className="flex-row px-1" style={{backgroundColor:"black", height: "85vh"}}>
       {icons.map((icon,index) => (
         <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">
           <i className={icon.name} style={!index ? {marginTop:"300%"}: null}></i>
