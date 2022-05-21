@@ -7,7 +7,7 @@ import About from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Extra from './components/Extra';
-
+import Downloads from './components/Downloads';
 
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
     { name: "about me", component: <About/>},
     { name: "portfolio", component: <Portfolio/>},
     { name: "contact", component: <Contact/>},
-    { name: "extra", component: <Extra/>}
+    { name: "extra", component: <Extra/>},
+    { name: "downloads", component: <Downloads/>}
   ]);
   
   const [currentPage, setCurrentPage] = useState(pages[0]);

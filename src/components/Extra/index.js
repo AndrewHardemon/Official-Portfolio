@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 
-
-
 function Extra() {
 
   const [fizz, setFizz] = useState([1,2,"Fizz",4,"Buzz"])
