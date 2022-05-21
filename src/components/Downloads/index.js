@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import saus from "../../assets/downloads/s.a.u.s_setup.exe"
+import saus from "../../assets/downloads/Installer.zip"
 
 
 
