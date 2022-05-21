@@ -7,9 +7,9 @@ function Downloads() {
 
 
   return (
-    <div>
+    <>
         <a href={saus} download><h1>SAUS</h1></a>
-    </div>
+    </>
   )
 
 }
