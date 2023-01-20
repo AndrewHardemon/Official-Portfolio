@@ -62,15 +62,15 @@ function Extra() {
     <>
       <h2>FizzBuzz Generator</h2>
       
-        <div class="label_form">
+        <div className="label_form">
           <label for="names">Names</label>
           <input name="names" value={data.names} placeholder="Fizz,Buzz,Dazz" onChange={handleChange} />
         </div>
-        <div class="label_form">
+        <div className="label_form">
           <label for="nums">Numbers</label>
           <input name="nums" value={data.nums} placeholder="3,5,7" onChange={handleChange} />
         </div>
-        <div class="label_form">
+        <div className="label_form">
           <label for="length">Length</label>
           <input name="length" value={data.length} placeholder="100" onChange={handleChange} />
         </div>
@@ -78,22 +78,22 @@ function Extra() {
         <div>
           {fizz.map((fb, i) => (
             (i !== fizz.length - 1)
-              ? <span style={isNaN(+fb) ? { color: "yellow" } : { color: "white" }}>{fb}, </span>
-              : <span style={isNaN(+fb) ? { color: "yellow" } : { color: "white" }}>{fb}</span>
+              ? <span style={isNaN(parseInt(fb)) ? { color: "yellow" } : { color: "white" }}>{fb}, </span>
+              : <span style={isNaN(parseInt(fb)) ? { color: "yellow" } : { color: "white" }}>{fb}</span>
           ))}
         </div>
       <br></br>
       <h2>Word Replacer</h2>
       
-        <div class="label_form">
+        <div className="label_form">
           <label for="original">Text</label>
           <textarea name="original" value={data.original} placeholder="Hello World" onChange={handleChange} />
         </div>
-        <div class="label_form">
+        <div className="label_form">
           <label for="old">Replace</label>
           <input name="old" value={data.old} placeholder=" " onChange={handleChange} />
         </div>
-        <div class="label_form">
+        <div className="label_form">
           <label for="new">Replace With</label>
           <input name="new" value={data.new} placeholder="_" onChange={handleChange} />
         </div>

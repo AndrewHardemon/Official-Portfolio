@@ -79,7 +79,9 @@ function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )} */}
-        <button type="submit">Submit</button>
+        <div style={{display:"grid", width: "87%"}}>
+        <button style={{marginTop: "10px"}} type="submit">Submit</button>
+        </div>
       </form>
     </section>
   )
