@@ -4,6 +4,7 @@ import vamp from "../../assets/projects/vamp-desktop.png"
 import sfw from "../../assets/projects/safe-for-work.png"
 import recommendations from "../../assets/projects/semi-random-recommendations.png"
 import adventure from "../../assets/projects/text-based-rpg.png"
+import "./style.css"
 
 function Portfolio(){
   const [projects, setProjects] = useState([
@@ -11,7 +12,7 @@ function Portfolio(){
       name: "vamp-desktop",
       description: "Real Time Chat Application",
       technologies: "MERN/socket.io/Electron",
-      link: "https://vamp-desktop.herokuapp.com/",
+      link: "https://vamp-desktop.onrender.com/",
       repo: "https://github.com/AeroAtlas/Vamp-Desktop",
       image: vamp,
       fullDescription: `Real time chat application created with MERN, socket.io, and multer to allowing for instant communication and image sharing.`
@@ -20,7 +21,7 @@ function Portfolio(){
       name: "safe-for-work",
       description: "Harry Potter Themed Testing System for Employees",
       technologies: "MERN/Chart.js/Passport",
-      link: "https://project-sfw.herokuapp.com/",
+      link: "https://safe-for-work.onrender.com/",
       repo: "https://github.com/Azorse/Project-SFW",
       image: sfw,
       fullDescription: `Program for teaching, testing, and graphing the results of employees of a company. Created with MERN and graph.js, it allows for multiple divisions of a company to be tested along side eachother.`
@@ -29,7 +30,7 @@ function Portfolio(){
       name: "semi-random-recommendations",
       description: "Random Movie and Game Generator",
       technologies: "MERN/socket.io/Electron",
-      link: "https://project2beta.herokuapp.com/",
+      link: "https://semi-random-recommendations.onrender.com/",
       repo: "https://github.com/AeroAtlas/Semi-Random-Recommendations",
       image: recommendations,
       fullDescription: `Random Movie and Video Game generator. Following MVC patterns with the use of Handlebars and Sequelize/SQL, it allows a user to put in several parameters for both games and movies, so the user can get random results for their specific interests.`
@@ -47,20 +48,21 @@ function Portfolio(){
 
   return (
     <div>  
-      <div className="flex-row" style={{backgroundColor:"rgba(68,71,90,0.6)", border: "2px black solid", marginBottom:"10px", width: "88vw"}}>
-        <div style={{height: "inherit", width: "33rem", display:"inline-block"}}>
+      <div className="portfolio-container">
+        <div className="project-highlight">
+          <div className="button-container">
+            <button onClick={() => setProjects(projects.concat(projects.shift()))}>Prev</button>
+            <button onClick={() => setProjects([projects.pop()].concat(projects))}>Next</button>
+          </div>
           <Project project={projects[0]} extra={true}/>
         </div>
-        <div className="flex-row" style={{width:"105rem"}}>
+        <div className="flex-row project-container">
         {projects.map((project, index) => (
           <Project project={project} index={index} key={index}/>
           ))}
         </div>
       </div>
-      <div style={{display:"flex", justifyContent:"center"}}>
-        <button onClick={() => setProjects(projects.concat(projects.shift()))}>Prev</button>
-        <button onClick={() => setProjects([projects.pop()].concat(projects))}>Next</button>
-      </div>
+
     </div>
   )
 }

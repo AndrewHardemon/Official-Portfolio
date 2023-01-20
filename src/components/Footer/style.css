@@ -1,0 +1,30 @@
+footer {
+  font-size: 48px;
+  justify-content: center;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  color: var(--light);
+  opacity: .5;
+  margin: 10px 20px;
+  transition: all .3s ease-in-out;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  height: 85vh;
+}
+
+@media screen and (max-width: 803px) {
+  .footer {
+    height: auto;
+  }
+}

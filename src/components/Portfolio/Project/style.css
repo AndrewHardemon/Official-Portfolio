@@ -1,0 +1,47 @@
+.project {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 20px;
+}
+
+.project-bg {
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+.project-text {
+    color: var(--secondary);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 50px;
+    z-index: 900;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.project-text:hover {
+  background-color: var(--alpha);
+  opacity: 1;
+  border: 10px solid var(--secondary);
+}
+
+.project-text h3 {
+  font-size: 2.5rem;
+}
+
+.project-text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--dark);
+  transition: all .3s ease-in-out;
+}
+
+.project-text a:hover {
+  color: var(--darker);
+}
