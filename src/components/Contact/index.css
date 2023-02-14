@@ -1,0 +1,10 @@
+.email-button {
+  text-decoration: none;
+  border: 2px solid black;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 45%;
+  width: 100px;
+  padding: 15px 10px;
+  margin-top: 10px;
+}
