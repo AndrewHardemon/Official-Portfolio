@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import nodemailer from "nodemailer";
+import "./index.css"
 
 
 function Contact() {
   const [info, setInfo] = useState({ name: "", email: "", subject: "", message: "" })
-
+  const disabled = Object.values(info).reduce((acc, curr) => curr && acc, true)
+  // Currently having issues with nodemailer
   const handleSubmit = async (e) => {
     let transporter = nodemailer.createTransport({
       host: "smtp.example.com",
@@ -37,7 +39,7 @@ function Contact() {
 
   return (
     <section>
-      <form id="contact-form" onSubmit={handleSubmit}>
+      <form id="contact-form" onSubmit={e => e.preventDefault()}>
         <div class="contact_form">
           <label for="name">Name:</label>
           <input
@@ -79,8 +81,11 @@ function Contact() {
             <p className="error-text">{errorMessage}</p>
           </div>
         )} */}
-        <div style={{display:"grid", width: "87%"}}>
-        <button style={{marginTop: "10px"}} type="submit">Submit</button>
+        <div style={{display:"flex", justifyContent:"center", width:"37rem"}}>
+        <a className="email-button"  href={disabled ? `mailto:andrewhardemon@gmail.com?subject=${info.subject}&body=${info.message}` : "#invalid"}>
+          {/* <button style={{marginTop: "10px"}} type="click">Submit</button> */}
+          Submit
+        </a>
         </div>
       </form>
     </section>

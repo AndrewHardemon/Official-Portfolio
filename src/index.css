@@ -282,10 +282,7 @@ textarea {
   text-shadow: 3px 3px 15px rgba(255,255,255, .5);
 }
 
-.label_form {
-  display: grid;
-  grid-template-columns: 1fr 3fr 6fr;
-}
+
 .contact_form {
   display: grid;
   /* grid-template-columns: 6fr 3fr 4fr; */
