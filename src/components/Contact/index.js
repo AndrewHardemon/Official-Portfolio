@@ -5,7 +5,7 @@ import "./index.css"
 
 function Contact() {
   const [info, setInfo] = useState({ name: "", email: "", subject: "", message: "" })
-
+  const disabled = Object.values(info).reduce((acc, curr) => curr && acc, true)
   // Currently having issues with nodemailer
   const handleSubmit = async (e) => {
     let transporter = nodemailer.createTransport({
@@ -82,7 +82,7 @@ function Contact() {
           </div>
         )} */}
         <div style={{display:"flex", justifyContent:"center", width:"37rem"}}>
-        <a className="email-button" href={`mailto:andrewhardemon@gmail.com?subject=${info.subject}&body=${info.message}`}>
+        <a className="email-button"  href={disabled ? `mailto:andrewhardemon@gmail.com?subject=${info.subject}&body=${info.message}` : "#invalid"}>
           {/* <button style={{marginTop: "10px"}} type="click">Submit</button> */}
           Submit
         </a>
