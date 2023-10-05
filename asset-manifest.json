@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Official-Portfolio/static/css/main.41b17621.chunk.css",
-    "main.js": "/Official-Portfolio/static/js/main.4c761a1d.chunk.js",
-    "main.js.map": "/Official-Portfolio/static/js/main.4c761a1d.chunk.js.map",
-    "runtime-main.js": "/Official-Portfolio/static/js/runtime-main.a4a7ae54.js",
-    "runtime-main.js.map": "/Official-Portfolio/static/js/runtime-main.a4a7ae54.js.map",
-    "static/js/2.0a1522e5.chunk.js": "/Official-Portfolio/static/js/2.0a1522e5.chunk.js",
-    "static/js/2.0a1522e5.chunk.js.map": "/Official-Portfolio/static/js/2.0a1522e5.chunk.js.map",
-    "static/js/3.b428b397.chunk.js": "/Official-Portfolio/static/js/3.b428b397.chunk.js",
-    "static/js/3.b428b397.chunk.js.map": "/Official-Portfolio/static/js/3.b428b397.chunk.js.map",
-    "index.html": "/Official-Portfolio/index.html",
-    "static/css/main.41b17621.chunk.css.map": "/Official-Portfolio/static/css/main.41b17621.chunk.css.map",
-    "static/js/2.0a1522e5.chunk.js.LICENSE.txt": "/Official-Portfolio/static/js/2.0a1522e5.chunk.js.LICENSE.txt",
-    "static/media/Andrew.e2225966.jpeg": "/Official-Portfolio/static/media/Andrew.e2225966.jpeg",
-    "static/media/safe-for-work.763c7b39.png": "/Official-Portfolio/static/media/safe-for-work.763c7b39.png",
-    "static/media/semi-random-recommendations.2dce397b.png": "/Official-Portfolio/static/media/semi-random-recommendations.2dce397b.png",
-    "static/media/text-based-rpg.19c4a7ae.png": "/Official-Portfolio/static/media/text-based-rpg.19c4a7ae.png",
-    "static/media/vamp-desktop.bb0b0ef6.png": "/Official-Portfolio/static/media/vamp-desktop.bb0b0ef6.png"
+    "main.css": "/static/css/main.41b17621.chunk.css",
+    "main.js": "/static/js/main.77f7baac.chunk.js",
+    "main.js.map": "/static/js/main.77f7baac.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a549d866.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a549d866.js.map",
+    "static/js/2.f50b106e.chunk.js": "/static/js/2.f50b106e.chunk.js",
+    "static/js/2.f50b106e.chunk.js.map": "/static/js/2.f50b106e.chunk.js.map",
+    "static/js/3.b428b397.chunk.js": "/static/js/3.b428b397.chunk.js",
+    "static/js/3.b428b397.chunk.js.map": "/static/js/3.b428b397.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.41b17621.chunk.css.map": "/static/css/main.41b17621.chunk.css.map",
+    "static/js/2.f50b106e.chunk.js.LICENSE.txt": "/static/js/2.f50b106e.chunk.js.LICENSE.txt",
+    "static/media/Andrew.e2225966.jpeg": "/static/media/Andrew.e2225966.jpeg",
+    "static/media/safe-for-work.763c7b39.png": "/static/media/safe-for-work.763c7b39.png",
+    "static/media/semi-random-recommendations.2dce397b.png": "/static/media/semi-random-recommendations.2dce397b.png",
+    "static/media/text-based-rpg.19c4a7ae.png": "/static/media/text-based-rpg.19c4a7ae.png",
+    "static/media/vamp-desktop.bb0b0ef6.png": "/static/media/vamp-desktop.bb0b0ef6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a4a7ae54.js",
-    "static/js/2.0a1522e5.chunk.js",
+    "static/js/runtime-main.a549d866.js",
+    "static/js/2.f50b106e.chunk.js",
     "static/css/main.41b17621.chunk.css",
-    "static/js/main.4c761a1d.chunk.js"
+    "static/js/main.77f7baac.chunk.js"
   ]
 }
