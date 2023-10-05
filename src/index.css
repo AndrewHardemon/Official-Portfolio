@@ -1,7 +1,8 @@
 main {
   margin: 0 auto;
-  max-width: 90%;
-  padding: 50px 0px;
+  /* max-width: 90%; */
+  width:96%;
+  padding: 50px 1%;
 }
 
 :root {
@@ -9,7 +10,7 @@ main {
   --secondary: #31343D;
   --tertiary: #b12704;
   --light: #fafafa;
-  --dark: #799FBA;
+  --dark: #0b0c0c;
   --darker: #1F3B60;
   --alpha: rgba(255,255,255,.7);
   --error: rgb(228, 46, 1);
@@ -52,8 +53,10 @@ h6 {
 }
 
 h1 {
-  font-size: 3vw;
-  margin: 2vw 20px;
+  /* font-size: 3vw;
+  margin: 2vw 20px; */
+  padding: 1rem;
+  margin: 0px;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -143,7 +146,7 @@ input {
   margin: 10px 0;
   font-size: 1rem;
   padding: 0.25rem;
-  width: 600px;
+  /* width: 600px; */
   border: 1px solid var(--dark);
   outline: none;
   border-radius: 3px;
@@ -193,7 +196,7 @@ ul.skills li {
 }
 
 textarea {
-  width: 600px;
+  /* width: 600px; */
   height: 200px;
   border: 3px solid #cccccc;
   padding: 5px;

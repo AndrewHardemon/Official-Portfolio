@@ -1,0 +1,11 @@
+.page-container {
+
+  /* background-color: ; */
+}
+
+.page-container > h2 {
+  background-color: #171d28;
+  border: 2px solid black;
+  padding: 1%;
+  margin-bottom: 1%;
+}

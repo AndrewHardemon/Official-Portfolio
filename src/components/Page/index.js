@@ -1,11 +1,12 @@
 import React from "react";
 import { capFirstLetter } from '../../utils/helpers';
+import "./index.css";
 
 function Page({currentPage}){
 
   return (
-    <section>
-      <h2>{capFirstLetter(currentPage.name)}</h2>
+    <section className="page-container">
+      <h2>{capFirstLetter(currentPage.title)}</h2>
       <div>{currentPage.component}</div>
     </section>
   )

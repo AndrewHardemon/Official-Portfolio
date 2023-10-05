@@ -1,0 +1,33 @@
+header {
+  /* height: 16vh; */
+
+  /* position: relative;
+  overflow: hidden;
+  z-index: 2; */
+}
+
+.main-header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 15vh;
+}
+
+
+
+/* header h1 {
+  position: relative;
+  z-index: 2;
+} */
+
+@media screen and (max-width: 803px) {
+  .main-header {
+    flex-direction: column;
+  }
+  .main-header h1:first-child{
+    display: none;
+   }
+  h1 {
+    padding: 0;
+  }
+}
