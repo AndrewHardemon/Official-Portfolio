@@ -1,5 +1,6 @@
 import React from "react";
 import profile from "../../assets/profile/Andrew.jpeg"
+import resume from "../../assets/profile/Andrew-Hardemon-Full-Stack-Web-Developer.pdf"
 import "./index.css";
 
 function About(){
@@ -24,7 +25,7 @@ function About(){
     <section className="my-5">
     <div className="my-2">
     <p>
-      Download my <a href="../../assets/profile/Andrew-Hardemon-Web-Development-TA-Resume.pdf" download="Andrew-Hardemon-Web-Development-TA-Resume.pdf">resume</a>
+      Download my <a target="_blank" href={"../../assets/profile/Andrew-Hardemon-Full-Stack-Web-Developer.pdf"}>resume</a>
       </p>
       <div className="about-me-container">
         <div className="about-me-div">

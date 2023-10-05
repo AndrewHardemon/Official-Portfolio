@@ -1,10 +1,4 @@
-.label_form {
-  /* display: grid;
-  grid-template-columns: 1fr 3fr 6fr; */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
+
 
 
 .extras-container{ 
@@ -12,9 +6,13 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  /* background-color: rgb(24, 11, 121); */
-  background-color: #141e59;
+  /* background-color: rgb(55 47 114);
+  background-color: #35435c; */
+  /* background-color: #141e59; */
+  background-color:#161a32;
+   /* #1a2046; */
   padding: 50px;
+  /* padding: 0 15%; */
   border: 2px solid black;
 }
 
@@ -24,6 +22,19 @@
   /* width: 400px; */
 }
 
+.label_form {
+  /* display: grid;
+  grid-template-columns: 1fr 3fr 6fr; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.label_form input, .label_form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
 
 /* .results-box {
   margin-left: 10px;

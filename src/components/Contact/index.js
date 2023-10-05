@@ -38,57 +38,61 @@ function Contact() {
 
 
   return (
-    <section>
-      <form id="contact-form" onSubmit={e => e.preventDefault()}>
-        <div class="contact_form">
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            name="name"
-            value={info.name}
-            onChange={handleChange}
-          />
-        </div>
-        <div class="contact_form">
-          <label for="email">Email address:</label>
-          <input
-            type="email"
-            name="email"
-            value={info.email}
-            onChange={handleChange}
-          />
-        </div>
-        <div class="contact_form">
-          <label for="subject">Subject:</label>
-          <input
-            type="text"
-            name="subject"
-            value={info.subject}
-            onChange={handleChange}
-          />
-        </div>
-        <div class="contact_form">
-          <label for="message">Message:</label>
-          <textarea
-            name="message"
-            rows="5"
-            value={info.message}
-            onChange={handleChange}
-          />
-        </div>
-        {/* {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
+    <div className="flex-container">
+      <section className="contact-container">
+        <form id="contact-form" onSubmit={e => e.preventDefault()}>
+          <div id="inner-contact-form">
+            <div class="contact_form">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                name="name"
+                value={info.name}
+                onChange={handleChange}
+              />
+            </div>
+            <div class="contact_form">
+              <label for="email">Email address:</label>
+              <input
+                type="email"
+                name="email"
+                value={info.email}
+                onChange={handleChange}
+              />
+            </div>
+            <div class="contact_form">
+              <label for="subject">Subject:</label>
+              <input
+                type="text"
+                name="subject"
+                value={info.subject}
+                onChange={handleChange}
+              />
+            </div>
+            <div class="contact_form">
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                rows="5"
+                value={info.message}
+                onChange={handleChange}
+              />
+            </div>
+            {/* {errorMessage && (
+              <div>
+                <p className="error-text">{errorMessage}</p>
+              </div>
+            )} */}
           </div>
-        )} */}
-        <div style={{display:"flex", justifyContent:"center", width:"37rem"}}>
-        <a className="email-button"  href={disabled ? `mailto:andrewhardemon@gmail.com?subject=${info.subject}&body=${info.message}` : "#invalid"}>
-          {/* <button style={{marginTop: "10px"}} type="click">Submit</button> */}
-          Submit
-        </a>
-        </div>
-      </form>
-    </section>
+          <div class="email-button-container">
+            <a className="email-button"  href={disabled ? `mailto:andrewhardemon@gmail.com?subject=${info.subject}&body=${info.message}` : "#invalid"}>
+              {/* <button style={{marginTop: "10px"}} type="click">Submit</button> */}
+              Submit
+            </a>
+          </div>
+        </form>
+      </section>
+    </div>
   )
 
 

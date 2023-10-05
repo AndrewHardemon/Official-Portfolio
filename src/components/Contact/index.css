@@ -1,10 +1,47 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  width:100%;
+}
+
+.contact-container {
+  margin-top: 50px;
+  max-width: 1200px;
+  width:100%;
+}
+
+.email-button-container {
+  display: flex;
+  justify-content: center;
+  /* width: 37rem; */
+}
+
+form {
+  width: 100%;
+}
+
+.inner-contact-form {
+  width:40%;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 95vw;
+  /* width: 100%; */
+}
+
 .email-button {
   text-decoration: none;
   border: 2px solid black;
   background-color: lightblue;
   text-align: center;
-  border-radius: 45%;
+  /* border-radius: 45%; */
+  color:#35435c;
+  padding: 10px;
   width: 100px;
   padding: 15px 10px;
   margin-top: 10px;
+}
+
+.email-button:hover {
+  color: black;
 }
