@@ -6,10 +6,10 @@ My official portfolio showing my projects and proficencies
 
 ## Contributors
 
-[AeroAtlas](https://github.com/AeroAtlas/), 
+[AeroAtlas](https://github.com/AeroAtlas/) 
 
 ## Live Site
-[official-portfolio-atlas](https://official-portfolio-atlas.herokuapp.com/)
+[Official Porfolio](https://andrew-hardemon.onrender.com/)
 
 ## Technologies
 
@@ -20,7 +20,7 @@ My official portfolio showing my projects and proficencies
 
 ## Preview of Project
 
-<img src="./official-portfolio.jpg"></img>
+<img src="./src/assets/portfolio-screenshot.PNG"></img>
 
 ## Table of Contents 
 

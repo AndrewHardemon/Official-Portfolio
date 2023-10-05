@@ -1,5 +1,6 @@
 import React from 'react';
 import { changeToStandardFormat } from '../../../utils/helpers';
+import "./style.css"
 
 function Project({ project, index, extra }) {
 
@@ -17,8 +18,8 @@ function Project({ project, index, extra }) {
       />
       <div className="project-text">
         <h3>
-          <a href={link}>{changeToStandardFormat(name)}</a>{' '}
-          <a href={repo}>
+          <a href={link} target="_blank">{changeToStandardFormat(name)}</a>{' '}
+          <a href={repo} target="_blank">
             <i className="fab fa-github"></i>
           </a>
         </h3>

@@ -1,4 +1,6 @@
 import React from "react";
+import "./style.css"
+
 
 function Footer(){
 
@@ -10,10 +12,10 @@ function Footer(){
   ]
 
   return (                                                                                                                /* width:"269px" */
-    <footer className="flex-row px-1" style={{backgroundColor:"black", height: "85vh"}}>
+    <footer className="footer flex-row px-1">
       {icons.map((icon,index) => (
         <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">
-          <i className={icon.name} style={!index ? {marginTop:"300%"}: null}></i>
+          <i className={icon.name} ></i>
         </a>
       ))}
     </footer>
