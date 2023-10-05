@@ -96,7 +96,8 @@ function Extra() {
   }
 
   return (
-    <>
+    <div className="extras-container">
+    <div className="extra-container">
       <h2>FizzBuzz Generator</h2>
 
       <div className="label_form">
@@ -119,6 +120,8 @@ function Extra() {
             : <span style={isNaN(parseInt(fb)) ? { color: "yellow" } : { color: "white" }}>{fb}</span>
         ))}
       </div>
+      </div>
+
       <br></br>
 
       <h2>React Inline CSS to Standard CSS</h2>
@@ -148,7 +151,7 @@ function Extra() {
       <button onClick={generateNewText}>Get Results</button>
 
 
-    </>
+    </div>
   )
 
 }

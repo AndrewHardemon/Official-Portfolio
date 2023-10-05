@@ -13,11 +13,14 @@ function Footer(){
 
   return (                                                                                                                /* width:"269px" */
     <footer className="footer flex-row px-1">
+      <div className="footer-nav">
       {icons.map((icon,index) => (
+
         <a href={icon.link} key={icon.name} target="_blank" rel="noopener noreferrer">
           <i className={icon.name} ></i>
         </a>
       ))}
+      </div>
     </footer>
   )
 
