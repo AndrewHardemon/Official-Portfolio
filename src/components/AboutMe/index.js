@@ -1,6 +1,6 @@
 import React from "react";
 import profile from "../../assets/profile/Andrew.jpeg"
-import resume from "../../assets/profile/Andrew-Hardemon-Full-Stack-Web-Developer.pdf"
+// import resume from "../../assets/profile/Andrew-Hardemon-Full-Stack-Web-Developer.pdf"
 import "./index.css";
 
 function About(){
@@ -9,7 +9,7 @@ function About(){
     <section className="my-5">
       <div className="my-2">
         <div className="my-5">
-        <img className="profile-img" src={profile} style={{ height: "200px", width: "auto", borderRadius:"100px" }}></img>
+        <img className="profile-img" alt="profile-img" src={profile} style={{ height: "200px", width: "auto", borderRadius:"100px" }}></img>
         <p>Andrew Hardemon - Full Stack Web Developer</p>
         <p>
         I've been programming for several years. It's a long time passion of mine, and I'm always looking to learn new languages, frameworks, and technologies.
@@ -25,7 +25,7 @@ function About(){
     <section className="my-5">
     <div className="my-2">
     <p>
-      Download my <a target="_blank" href={"../../assets/profile/Andrew-Hardemon-Full-Stack-Web-Developer.pdf"}>resume</a>
+      Download my <a target="_blank" rel="noreferrer" href={"../../assets/profile/Andrew-Hardemon-Full-Stack-Web-Developer.pdf"}>resume</a>
       </p>
       <div className="about-me-container">
         <div className="about-me-div">

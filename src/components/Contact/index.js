@@ -42,8 +42,8 @@ function Contact() {
       <section className="contact-container">
         <form id="contact-form" onSubmit={e => e.preventDefault()}>
           <div id="inner-contact-form">
-            <div class="contact_form">
-              <label for="name">Name:</label>
+            <div className="contact_form">
+              <label htmlFor="name">Name:</label>
               <input
                 type="text"
                 name="name"
@@ -51,8 +51,8 @@ function Contact() {
                 onChange={handleChange}
               />
             </div>
-            <div class="contact_form">
-              <label for="email">Email address:</label>
+            <div className="contact_form">
+              <label htmlFor="email">Email address:</label>
               <input
                 type="email"
                 name="email"
@@ -60,8 +60,8 @@ function Contact() {
                 onChange={handleChange}
               />
             </div>
-            <div class="contact_form">
-              <label for="subject">Subject:</label>
+            <div className="contact_form">
+              <label htmlFor="subject">Subject:</label>
               <input
                 type="text"
                 name="subject"
@@ -69,8 +69,8 @@ function Contact() {
                 onChange={handleChange}
               />
             </div>
-            <div class="contact_form">
-              <label for="message">Message:</label>
+            <div className="contact_form">
+              <label htmlFor="message">Message:</label>
               <textarea
                 name="message"
                 rows="5"
@@ -84,7 +84,7 @@ function Contact() {
               </div>
             )} */}
           </div>
-          <div class="email-button-container">
+          <div className="email-button-container">
             <a className="email-button"  href={disabled ? `mailto:andrewhardemon@gmail.com?subject=${info.subject}&body=${info.message}` : "#invalid"}>
               {/* <button style={{marginTop: "10px"}} type="click">Submit</button> */}
               Submit
