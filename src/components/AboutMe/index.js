@@ -1,5 +1,6 @@
 import React from "react";
 import profile from "../../assets/profile/Andrew.jpeg"
+import "./index.css";
 
 function About(){
   return (
@@ -7,7 +8,7 @@ function About(){
     <section className="my-5">
       <div className="my-2">
         <div className="my-5">
-        <img sclassNam2e="profile-img" src={profile} style={{ height: "200px", width: "auto", borderRadius:"100px" }}></img>
+        <img className="profile-img" src={profile} style={{ height: "200px", width: "auto", borderRadius:"100px" }}></img>
         <p>Andrew Hardemon - Full Stack Web Developer</p>
         <p>
         I've been programming for several years. It's a long time passion of mine, and I'm always looking to learn new languages, frameworks, and technologies.
@@ -25,8 +26,8 @@ function About(){
     <p>
       Download my <a href="../../assets/profile/Andrew-Hardemon-Web-Development-TA-Resume.pdf" download="Andrew-Hardemon-Web-Development-TA-Resume.pdf">resume</a>
       </p>
-      <div style={{display:"grid", gridTemplateColumns: "33% 33% 33%", gridTemplateRows:"10% 90%"}}>
-        <div style={{gridColumnStart:"1", gridColumnEnd:"2", gridRowStart:"1", gridRowEnd:"2"}}>
+      <div className="about-me-container">
+        <div className="about-me-div">
           <h3>Front-end Proficiencies</h3>
           <ul className="skills">
             <li>HTML</li>

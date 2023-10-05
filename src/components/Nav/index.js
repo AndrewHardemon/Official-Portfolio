@@ -1,6 +1,8 @@
 import React, {useEffect} from "react";
 import {capFirstLetter} from "../../utils/helpers"
-// import styles from "./style.module.css"
+import "./index.css"
+
+
 function Nav(props){
   const {pages, setCurrentPage, currentPage} = props;
 
@@ -10,7 +12,7 @@ function Nav(props){
 
   return (
     <nav>
-      <ul className="flex-row">
+      <ul className="navigation-bar">
         {pages?.map(page => (
           <li
             className={`mx-5 ${currentPage.name === page.name ?? 'navActive'}`}

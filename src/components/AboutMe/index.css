@@ -1,0 +1,38 @@
+.about-me-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 10% 90%;
+}
+
+.about-me-div {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+/* .profile-img {
+  transition: 0.5s;
+  animation: cowmove 4s infinite; 
+}
+
+@keyframes cowmove{
+  0% {
+    transform: translateX(100px) rotateY(0deg);
+  }
+  49% {
+    transform: translateX(500px) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(500px) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(100px) rotateY(180deg);
+  }
+} */
+
+@media screen and (max-width: 800px) {
+  .about-me-container {
+    display: block;
+  }
+}

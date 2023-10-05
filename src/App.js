@@ -13,11 +13,11 @@ import Downloads from './components/Downloads';
 function App() {
   //possibily capitalize the first letter here instead
   const [pages] = useState([
-    { name: "about me", component: <About/>},
-    { name: "portfolio", component: <Portfolio/>},
-    { name: "contact", component: <Contact/>},
-    { name: "extra", component: <Extra/>},
-    { name: "downloads", component: <Downloads/>}
+    { name: "about", component: <About/>, title: "about me"},
+    { name: "portfolio", component: <Portfolio/>, title: "my projects"},
+    { name: "contact", component: <Contact/>, title: "contact me"},
+    { name: "extra", component: <Extra/>, title: "extras and downloads"},
+    // { name: "downloads", component: <Downloads/>}
   ]);
   
   const [currentPage, setCurrentPage] = useState(pages[0]);

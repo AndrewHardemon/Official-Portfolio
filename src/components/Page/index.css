@@ -1,0 +1,9 @@
+.page-container {
+
+}
+
+.page-container > h2 {
+  border: 2px solid black;
+  padding: 1%;
+  margin-bottom: 1%;
+}
