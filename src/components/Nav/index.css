@@ -21,6 +21,9 @@
 
 
 @media screen and (max-width: 803px) {
+  .main-header{
+    height: 10vh;
+  }
   nav {
     width: 100%;
     /* margin: auto; */
@@ -59,7 +62,7 @@
   .navigation-bar li span {
     width: 100%;
     border: 2px solid #0b0c0c;
-    padding: 5px;
+    /* padding: 5px; */
     text-align: center;
     background-color: #171d28;
     text-align: center;

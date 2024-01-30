@@ -7,7 +7,7 @@ import About from './components/AboutMe';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Extra from './components/Extra';
-import Downloads from './components/Downloads';
+// import Downloads from './components/Downloads';
 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
       <Header>
         <Nav pages={pages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
       </Header>
-      <div class="main_container">
+      <div className="main_container">
         <Footer />
       <main>
         <Page currentPage={currentPage}></Page>
