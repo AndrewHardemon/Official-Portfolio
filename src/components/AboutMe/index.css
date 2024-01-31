@@ -4,11 +4,26 @@
   grid-template-rows: 10% 90%;
 }
 
+.about-me-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .about-me-div {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
+}
+
+.resume-link{
+  font-size: 24px;
+  text-align: center;
+}
+
+.resume-link a{
+  color: rgb(107, 248, 255);
 }
 
 /* .profile-img {

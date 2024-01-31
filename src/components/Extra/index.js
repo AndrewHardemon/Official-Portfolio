@@ -16,26 +16,27 @@ function Extra() {
   })
   const [text, setText] = useState("Hello Friend")
   const [css, setCss] = useState('text-decoration: none')
-  // const [data2, setData2] = useState({
-
-  // })
 
   const fizzbuzz = (num, opt) => {
-    return num.reduce((acc, curr) => (acc + (opt.map(o => !(curr % o.num) ? o.word : "").reduce((a, c) => a + c) || curr) + " "), "").split(" ")
+    return num.reduce((acc, curr) => (acc + (opt.map(o => !(curr % o?.num) ? o?.word : "").reduce((a, c) => a + c) || curr) + " "), "").split(" ")
   }
 
   const generateFizzBuzz = () => {
     const length = (isNaN(+data.length) && data.length.length) ? 100 : +data.length
-    if (length > 1000) {
-      length = 1000
+    if (length > 5000) {
+      return setFizz(["Please enter a number less than 5000"])
     }
     const arr = [...Array(length)].map((_, i) => i + 1)
-    const names = data.names.split(",")
-    const nums = data.nums.split(",")
+    const names = data.names.split(",").map(name => name.trim());
+    const nums = data.nums.split(",").map(name => name.trim());
+
+    if(names?.length !== nums?.length){
+      return setFizz(["Please enter the same number of names and numbers"])
+    }
 
     let opt = []
     for (let i = 0; i < names?.length; i++) {
-      const obj = { word: names[i].trim(), num: +nums[i].trim() }
+      const obj = { word: names[i].trim(), num: parseInt(nums[i].trim()) }
       opt.push(obj)
     }
 
@@ -48,10 +49,15 @@ function Extra() {
   }
 
   const generateNewText = () => {
-    let oldList = data.old.split(",")
-    let newList = data.new.split(",")
-    oldList.forEach((old, i) => {
-      setText(text.replace(old, newList[i]))
+    console.log("hello")
+    let oldList = data.old.split(",").map(old => old.trim());
+    let newList = data.new.split(",").map(neww => neww.trim());
+    let text = data.original
+    let largeArr = oldList.length < newList.length ? newList : oldList
+    let smallArr = oldList.length < newList.length ? oldList : newList
+    console.log(oldList, newList);
+    largeArr.forEach((item, i) => {
+      setText(text.replace(item, smallArr[i]))
     })
   }
 
@@ -89,6 +95,7 @@ function Extra() {
     setCss(result)
 
   }
+
 
   const handleChange = (e) => {
     console.log(e.target.value)
