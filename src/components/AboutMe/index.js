@@ -9,23 +9,27 @@ function About() {
     <>
       <section className="my-5">
         <div className="my-2">
-          <div className="about-me-section my-5">
+          <div className="about-me-section">
+            <h3 className="my-2 about-me-header">Andrew Hardemon - Full Stack Web Developer</h3>
             <img className="profile-img" alt="profile-img" src={profile} style={{ height: "200px", width: "auto", borderRadius: "100px" }}></img>
-            <p>Andrew Hardemon - Full Stack Web Developer</p>
-            <p>
-              I've been programming for several years. It's a long time passion of mine, and I'm always looking to learn new languages, frameworks, and technologies.
-              I studied CS at Eastern Kentucky University, and I am a certified Full Stack Web Developer from the University of Arizona.
-            </p>
-            <p>
-              Now I work as a Full Stack Web Development Tutor and Teacher's Assistant (TA) with Triology, Edu.
-              I worked as a Teacher's Assistant at UCLA, and currently am I Senior Tutor helping students from many different universities.
+            <p >
+              I am a Full Stack Web Developer with a background in education and management.
+              My passion for technology and education led me to a position where I help junior developers learn the skills they need to succeed in the tech industry. 
+              <p>
+              I have a strong background in JavaScript, Node.js, Express, MongoDB, React, and responsive web design. While web development is my primary focus, I also spend a lot of time learning about program development and functional programming.
+              Of all of my skills, I believe my strongest is my ability to learn and understand new and complex ideas and communicate them in a way that is easy to understand.
+              </p>
+              <p>
+                Now I work as a Full Stack Web Development Tutor and Teacher's Assistant with 2U and EdX.
+                I worked as a Teacher's Assistant at UCLA, and currently am I Senior Tutor helping students from many different universities.
+              </p>
             </p>
           </div>
         </div>
       </section>
       <section className="my-5">
         <div className="my-2">
-          <p className="resume-link">
+          <p className="resume-link about-me-text">
             Download my <a target="_blank" rel="noreferrer" href={resume}>Resume</a>
           </p>
           <div className="about-me-container">
