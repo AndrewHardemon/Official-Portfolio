@@ -19,7 +19,7 @@ function Portfolio(){
       fullDescription: `Real time chat application created with MERN, socket.io, and multer to allowing for instant communication and image sharing.`
     },
     {
-      name: "semi-random-recommendations",
+      name: "semi-random-recommends",
       description: "Random Movie and Game Generator",
       technologies: "MERN/socket.io/Electron",
       link: "https://semi-random-recommendations.herokuapp.com/",
