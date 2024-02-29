@@ -55,10 +55,15 @@ function Extra() {
     let text = data.original
     let largeArr = oldList.length < newList.length ? newList : oldList
     let smallArr = oldList.length < newList.length ? oldList : newList
-    console.log(oldList, newList);
+    console.log(largeArr, smallArr, text);
+    let newText = text;
     largeArr.forEach((item, i) => {
-      setText(text.replace(item, smallArr[i]))
+      let regex = new RegExp(item, "g")
+      console.log(regex)
+      newText = newText.replace(regex, smallArr[i])
     })
+    console.log(newText)
+    setText(newText)
   }
 
   const generateNewCSS = () => {
