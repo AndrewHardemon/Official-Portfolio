@@ -34,7 +34,7 @@ function About() {
           </p>
           <div className="about-me-container">
             <div className="about-me-div">
-              <h3>Front-end Proficiencies</h3>
+              <h3>Front-end</h3>
               <ul className="skills">
                 <li>HTML / CSS</li>
                 <li>Bootstrap</li>
@@ -48,7 +48,7 @@ function About() {
               </ul>
             </div>
             <div style={{ gridColumnStart: "2", gridColumnEnd: "3", gridRowStart: "1", gridRowEnd: "2" }}>
-              <h3>Back-end Proficiencies</h3>
+              <h3>Back-end</h3>
               <ul className="skills">
                 <li>REST APIs</li>
                 <li>Node.js</li>

@@ -22,6 +22,16 @@
   grid-row-start: 1;
   grid-row-end: 2;
 }
+
+.about-me-container h3 {
+    font-size: 1.75rem;
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+    border: 2px solid black;
+    margin: 2px;
+}
+
 .about-me-header{
   font-size: 30px;
   text-align: center;
