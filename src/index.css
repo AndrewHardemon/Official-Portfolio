@@ -89,7 +89,7 @@ p {
 a {
   color: var(--light);
   text-decoration: none;
-  opacity: .5;
+  /* opacity: .5; */
 }
 
 a:hover {
@@ -329,6 +329,11 @@ input {
   .main_container {
     display: flex;
     flex-direction: column-reverse;
+  }
+  main {
+    padding: 0px;
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 

@@ -40,6 +40,26 @@
   font-weight: bold;
 }
 
+.profile-img {
+  /* width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  margin: 0 auto;
+  margin-bottom: 20px; */
+
+  height: 200px;
+  width: auto; 
+  border-radius: 15px;
+}
+
+/* .profile-img:hover {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5) ;
+} */
+
 .about-me-text {
   background-color: rgb(147, 165, 191);
   padding: 20px;
@@ -48,16 +68,15 @@
   color: black;
 }
 
-.resume-link{
-  font-size: 24px;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 40px;
+.resume-link {
+	font-size: 24px;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 40px;
+	width: 25%;
+	margin: 30px auto;
 }
 
-.resume-link a{
-  color: rgb(107, 248, 255);
-}
 
 /* .profile-img {
   transition: 0.5s;
@@ -79,8 +98,18 @@
   }
 } */
 
+@media screen and (max-width: 1294px) {
+  .resume-link {
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: 803px) {
   .about-me-container {
     display: block;
   }
+  .resume-link {
+    width: 50%;
+  }
+
 }

@@ -1,17 +1,48 @@
-import React from "react";
+import React, {useEffect} from "react";
 import profile from "../../assets/profile/Andrew.jpeg"
+import logo from "../../assets/profile/AH-LOGO-NEW.png"
 // import resume from "../../assets/profile/Andrew-Hardemon-Full-Stack-Web-Developer.pdf"
 import resume from "../../assets/profile/Andrew-Hardemon-Full-Stack-Web-Developer.pdf"
+import anime from 'animejs/lib/anime.es.js';
 import "./index.css";
 
 function About() {
+
+  // useEffect(() => {
+  //   const profile = anime.timeline({
+  //     // easing: 'easeOutExpo',
+  //     // duration: 1000
+  //   })
+
+  //   profile
+  //     .add({
+  //       targets: '.profile-img',
+  //       translateX: 250,
+  //       duration: 800,
+  //       delay: 200,
+  //     })
+  //     .add({
+  //       targets: '.profile-img',
+  //       translateX: -250,
+  //       duration: 800,
+  //       delay: 200,
+  //     })
+  //     .add({
+  //       targets: '.profile-img',
+  //       translateX: 0,
+  //       duration: 800,
+  //       delay: 200,
+  //     })
+  // }, []);
+
+
   return (
     <>
       <section className="my-5">
         <div className="my-2">
           <div className="about-me-section">
             <h3 className="my-2 about-me-header">Andrew Hardemon - Full Stack Web Developer</h3>
-            <img className="profile-img" alt="profile-img" src={profile} style={{ height: "200px", width: "auto", borderRadius: "100px" }}></img>
+            <img className="profile-img" alt="profile-img" src={logo}></img>
             <p >
               I am a Full Stack Web Developer with a background in education and management.
               My passion for technology and education led me to a position where I help junior developers learn the skills they need to succeed in the tech industry. 
@@ -21,7 +52,7 @@ function About() {
               </p>
               <p>
                 Now I work as a Full Stack Web Development Tutor and Teacher's Assistant with 2U and EdX.
-                I worked as a Teacher's Assistant at UCLA, and currently am I Senior Tutor helping students from many different universities.
+                I worked as a Teacher's Assistant at UCLA, and currently am a Senior Tutor helping students from many different universities.
               </p>
             </p>
           </div>
@@ -29,9 +60,11 @@ function About() {
       </section>
       <section className="my-5">
         <div className="my-2">
+        <a target="_blank" rel="noreferrer" href={resume}>
           <p className="resume-link about-me-text">
-            Download my <a target="_blank" rel="noreferrer" href={resume}>Resume</a>
+            Download my Resume
           </p>
+          </a>
           <div className="about-me-container">
             <div className="about-me-div">
               <h3>Front-end</h3>

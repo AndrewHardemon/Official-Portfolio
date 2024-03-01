@@ -36,6 +36,10 @@ footer a:hover {
     height: auto;
     min-height: 0%;
     height: 75px;
+    position: fixed;
+    width:100%;
+    bottom: 0;
+    z-index: 1000;
   }
   .footer-nav {
     width: 100%;
