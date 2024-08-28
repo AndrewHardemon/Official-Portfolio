@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Project from "./Project";
 import vamp from "../../assets/projects/vamp-desktop.png"
 import sfw from "../../assets/projects/safe-for-work.png"
@@ -7,7 +7,7 @@ import adventure from "../../assets/projects/text-based-rpg.png"
 import saus from "../../assets/projects/saus_project.png"
 import "./style.css"
 
-function Portfolio(){
+function Portfolio() {
   const [projects, setProjects] = useState([
     {
       name: "vamp-desktop",
@@ -57,18 +57,20 @@ function Portfolio(){
   ])
 
   return (
-    <div>  
+    <div>
       <div className="portfolio-container">
-        <div className="project-highlight">
+        <div className="project-manager">
           <div className="button-container">
             <button onClick={() => setProjects([projects.pop()].concat(projects))}>Prev</button>
             <button onClick={() => setProjects(projects.concat(projects.shift()))}>Next</button>
           </div>
-          <Project project={projects[0]} extra={true}/>
+          <div className="project-highlight">
+            <Project project={projects[0]} extra={true} />
+          </div>
         </div>
         <div className="flex-row project-container">
-        {projects.filter((_,i) => i != 0).map((project, index) => (
-          <Project project={project} index={index} key={index}/>
+          {projects.filter((_, i) => i != 0).map((project, index) => (
+            <Project project={project} index={index} key={index} />
           ))}
         </div>
       </div>

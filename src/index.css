@@ -82,7 +82,7 @@ h6 {
 
 p {
   font-size: 1.1rem;
-  margin: 20px 0;
+  /* margin: 20px 0; */
   line-height: 2rem;
 }
 
@@ -106,7 +106,7 @@ header a {
 }
 
 button {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 600;
   text-decoration: none;
   border-radius: 0.5rem;

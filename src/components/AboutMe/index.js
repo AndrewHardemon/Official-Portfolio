@@ -2,36 +2,33 @@ import React, {useEffect} from "react";
 import profile from "../../assets/profile/Andrew.jpeg"
 import logo from "../../assets/profile/AH-LOGO-NEW.png"
 // import resume from "../../assets/profile/Andrew-Hardemon-Full-Stack-Web-Developer.pdf"
-import resume from "../../assets/profile/Andrew-Hardemon-Full-Stack-Web-Developer.pdf"
+import resume from "../../assets/profile/Andrew-Hardemon-Resume.pdf"
 import anime from 'animejs/lib/anime.es.js';
 import "./index.css";
 
 function About() {
 
   // useEffect(() => {
+  //   // document.querySelector(".footer").translateX = "-250px"
   //   const profile = anime.timeline({
-  //     // easing: 'easeOutExpo',
-  //     // duration: 1000
+  //     easing: 'easeOutExpo',
+  //     duration: 1000,
+  //     // begin: function(){
+  //     // }
   //   })
 
   //   profile
+  //     // .add({
+  //     //   targets: '.footer',
+  //     //   translateX: -250,
+  //     //   duration: 800,
+  //     //   delay: 200,
+  //     // })
   //     .add({
-  //       targets: '.profile-img',
+  //       targets: '.footer',
   //       translateX: 250,
   //       duration: 800,
-  //       delay: 200,
-  //     })
-  //     .add({
-  //       targets: '.profile-img',
-  //       translateX: -250,
-  //       duration: 800,
-  //       delay: 200,
-  //     })
-  //     .add({
-  //       targets: '.profile-img',
-  //       translateX: 0,
-  //       duration: 800,
-  //       delay: 200,
+  //       delay: 500,
   //     })
   // }, []);
 
@@ -58,8 +55,8 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="my-5">
-        <div className="my-2">
+      <section className="my-3">
+        <div className="my-1">
         <a target="_blank" rel="noreferrer" href={resume}>
           <p className="resume-link about-me-text">
             Download my Resume
