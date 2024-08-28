@@ -30,7 +30,7 @@ function Extra() {
     const names = data.names.split(",").map(name => name.trim());
     const nums = data.nums.split(",").map(name => name.trim());
 
-    if(names?.length !== nums?.length){
+    if (names?.length !== nums?.length) {
       return setFizz(["Please enter the same number of names and numbers"])
     }
 
@@ -80,9 +80,9 @@ function Extra() {
 
     newStr = newStr.split(",").map(css => {
       let newCss = css.split(":")
-      
+
       //handle incorrect inputs
-      if(newCss.length != 2){
+      if (newCss.length != 2) {
         return "INVALID ENTRY"
       }
 
@@ -109,60 +109,64 @@ function Extra() {
 
   return (
     <div className="extras-container">
-    <div className="extra-container">
-      <h2>FizzBuzz Generator</h2>
 
-      <div className="label_form">
-        <label for="names">Names</label>
-        <input name="names" value={data.names} placeholder="Fizz,Buzz,Dazz" onChange={handleChange} />
-      </div>
-      <div className="label_form">
-        <label for="nums">Numbers</label>
-        <input name="nums" value={data.nums} placeholder="3,5,7" onChange={handleChange} />
-      </div>
-      <div className="label_form">
-        <label for="length">Length</label>
-        <input name="length" value={data.length} placeholder="100" onChange={handleChange} />
-      </div>
-      <button onClick={generateFizzBuzz}>Get Results</button>
-      <div>
-        {fizz.map((fb, i) => (
-          (i !== fizz.length - 1)
-            ? <span style={isNaN(parseInt(fb)) ? { color: "yellow" } : { color: "white" }}>{fb}, </span>
-            : <span style={isNaN(parseInt(fb)) ? { color: "yellow" } : { color: "white" }}>{fb}</span>
-        ))}
-      </div>
+      <div className="extra-container">
+        <h2>FizzBuzz Generator</h2>
+
+        <div className="label_form">
+          <label for="names">Names</label>
+          <input name="names" value={data.names} placeholder="Fizz,Buzz,Dazz" onChange={handleChange} />
+        </div>
+        <div className="label_form">
+          <label for="nums">Numbers</label>
+          <input name="nums" value={data.nums} placeholder="3,5,7" onChange={handleChange} />
+        </div>
+        <div className="label_form">
+          <label for="length">Length</label>
+          <input name="length" value={data.length} placeholder="100" onChange={handleChange} />
+        </div>
+        <button onClick={generateFizzBuzz}>Get Results</button>
+        <div>
+          {fizz.map((fb, i) => (
+            (i !== fizz.length - 1)
+              ? <span style={isNaN(parseInt(fb)) ? { color: "yellow" } : { color: "white" }}>{fb}, </span>
+              : <span style={isNaN(parseInt(fb)) ? { color: "yellow" } : { color: "white" }}>{fb}</span>
+          ))}
+        </div>
       </div>
 
-      <br></br>
-
-      <h2>React Inline CSS to Standard CSS</h2>
-
-      <div className="label_form">
-        <label for="css">CSS</label>
-        <textarea name="css" value={data.css} placeholder="{ textDecoration: 'none' }" onChange={handleChange} />
-        <textarea className="results-box" value={css}>{css}</textarea>
+      
+      <div className="extra-container">
+        <h2>Convert React Inline CSS</h2>
+        <div className="label_form">
+          <label for="css">CSS</label>
+          <textarea name="css" value={data.css} placeholder="{ textDecoration: 'none' }" onChange={handleChange} />
+          <label for="css-result">Result</label>
+          <textarea name="css-result" className="results-box" value={css}>{css}</textarea>
+        </div>
+        <button onClick={generateNewCSS}>Get Results</button>
       </div>
-      <button onClick={generateNewCSS}>Get Results</button>
-      <br></br>
-      <h2>Word Replacer</h2>
+      
 
-      <div className="label_form">
-        <label for="original">Text</label>
-        <textarea name="original" value={data.original} placeholder="Hello World" onChange={handleChange} />
-        <textarea className="results-box" value={text}>{text}</textarea>
-      </div>
-      <div className="label_form">
-        <label for="old">Replace</label>
-        <input name="old" value={data.old} placeholder="World" onChange={handleChange} />
-      </div>
-      <div className="label_form">
-        <label for="new">Replace With</label>
-        <input name="new" value={data.new} placeholder="Friend" onChange={handleChange} />
-      </div>
-      <button onClick={generateNewText}>Get Results</button>
+      <div className="extra-container">
+        <h2>Word Replacer</h2>
+        <div className="label_form">
+          <label for="original">Text</label>
+          <textarea name="original" value={data.original} placeholder="Hello World" onChange={handleChange} />
+          <label for="text-result">Result</label>
+          <textarea name="text-result" className="results-box" value={text}>{text}</textarea>
+        </div>
+        <div className="label_form">
+          <label for="old">Replace</label>
+          <input name="old" value={data.old} placeholder="World" onChange={handleChange} />
+        </div>
+        <div className="label_form">
+          <label for="new">Replace With</label>
+          <input name="new" value={data.new} placeholder="Friend" onChange={handleChange} />
+        </div>
+        <button onClick={generateNewText}>Get Results</button>
 
-
+      </div>
     </div>
   )
 

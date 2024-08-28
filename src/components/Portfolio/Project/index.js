@@ -26,8 +26,8 @@ function Project({ project, index, extra }) {
         <p>{description}</p>
       </div>
       {extra ? <div style={{padding:"0.5rem", border: "2px solid black", backgroundColor:"rgba(68,71,90,0.5)", boxShadow: "10px 10px black"}}>
-        <h2 style={{textShadow: "1px 1px black", borderBottom: "3px solid black", paddingBottom: "3px"}}>{changeToStandardFormat(name)}</h2>
-        <h4 style={{color:"white", textShadow:"1px 1px black"}}>{fullDescription}</h4>
+        <h2 className="project-name">{changeToStandardFormat(name)}</h2>
+        <h4 className="project-description">{fullDescription}</h4>
       </div> : null}
     </div> : null}
     </>
