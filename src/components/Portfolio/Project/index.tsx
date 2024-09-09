@@ -2,7 +2,20 @@ import React from 'react';
 import { changeToStandardFormat } from '../../../utils/helpers';
 import "./style.css"
 
-function Project({ project, index, extra }) {
+interface ProjectProps {
+  project: {
+    name: string,
+    repo: string,
+    link: string,
+    description: string,
+    image: string,
+    fullDescription: string
+  },
+  index: number,
+  extra: boolean
+}
+
+function Project({ project, index, extra }: ProjectProps) {
 
   const { name, repo, link, description, image, fullDescription } = project;
 

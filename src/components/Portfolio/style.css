@@ -3,7 +3,7 @@
   /* flex-wrap: nowrap; */
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(68,71,90,0.6); 
+  /* background-color: rgba(68,71,90,0.6);  */
   border: 2px black solid;
   margin-bottom: 10px; 
   /* width: 88vw; */
@@ -42,7 +42,7 @@
 /* @media screen and (max-width: 2081px) {
 
 } */
-
+/* 
 @media screen and (max-width: 1892px) {
   .portfolio-container {
     flex-direction: column;
@@ -51,6 +51,5 @@
   }
   .project-container {
     display: flex;
-    /* justify-content: flex-end; */
   }
-}
+} */

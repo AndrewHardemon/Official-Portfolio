@@ -1,9 +1,22 @@
 import React, {useEffect} from "react";
-import {capFirstLetter} from "../../utils/helpers"
+import {capFirstLetter} from "../../../utils/helpers"
 import "./index.css"
 
+interface NavProps {
+  pages: {
+    name: string,
+    component: JSX.Element,
+    title: string
+  }[],
+  setCurrentPage: (page: { name: string, component: JSX.Element, title: string }) => void,
+  currentPage: {
+    name: string,
+    component: JSX.Element,
+    title: string
+  }
+}
 
-function Nav(props){
+function Nav(props: NavProps){
   const {pages, setCurrentPage, currentPage} = props;
 
   useEffect(()=>{
