@@ -1,64 +1,50 @@
-# Andrew Hardemon Portfolio
+# React + TypeScript + Vite
 
-## Description
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-My official portfolio showing my projects and proficencies
+Currently, two official plugins are available:
 
-## Contributors
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-[AeroAtlas](https://github.com/AeroAtlas/) 
+## Expanding the ESLint configuration
 
-## Live Site
-[Official Porfolio](https://andrew-hardemon.onrender.com/)
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-## Technologies
+- Configure the top-level `parserOptions` property like this:
 
-<ul>
-  <li>React</li>
-  <li>Javascript</li>
-</ul>
-
-## Preview of Project
-
-<img src="./src/assets/portfolio-screenshot.PNG"></img>
-
-## Table of Contents 
-
-* [Installation](#installation)
-
-* [Usage](#usage)
-
-* [Contributing](#contributing)
-
-* [Tests](#tests)
-
-* [Questions](#questions)
-
-## Installation
-
-To install necessary dependencies, run the following command:
-
-```
-npm i
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
 ```
 
-## Usage
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-Visit the live link to see the portfolio
-  
-## Contributing
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
 
-N/A
-
-## Tests
-
-To run tests, run the following command:
-
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
 ```
-npm test
-```
-
-## Questions
-
-If you have any questions about the repo, open an issue or contact me directly at andrewhardemon@gmail.com. You can find more of my work at [AeroAtlas](https://github.com/AeroAtlas/).
-

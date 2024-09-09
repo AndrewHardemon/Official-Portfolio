@@ -1,11 +1,15 @@
 import React from "react";
 import "./index.css"
 
-function Header(props) {
+interface HeaderProps {
+  children: React.ReactNode
+}
+
+function Header({children}: HeaderProps) {
   return (
     <header className="main-header px-1">
       <h1>Andrew Hardemon</h1>
-      {props.children}
+      {children}
     </header>
   )
 }

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import "./index.css"
 
 
-function Extra() {
+const Extra: FC = () => {
 
-  const [fizz, setFizz] = useState([1, 2, "Fizz", 4, "Buzz"])
+  const [fizz, setFizz] = useState(["1", "2", "Fizz", "4", "Buzz"])
   const [data, setData] = useState({
     names: "",
     nums: "",
@@ -17,8 +17,13 @@ function Extra() {
   const [text, setText] = useState("Hello Friend")
   const [css, setCss] = useState('text-decoration: none')
 
-  const fizzbuzz = (num, opt) => {
-    return num.reduce((acc, curr) => (acc + (opt.map(o => !(curr % o?.num) ? o?.word : "").reduce((a, c) => a + c) || curr) + " "), "").split(" ")
+  const fizzbuzz = (num: any, opt: any) => {
+    return num
+      .reduce((acc: any, curr: any) => (acc + (
+        opt.map((o: any) => !(curr % o?.num) ? o?.word : ""
+      )
+      .reduce((a: any, c: any) => a + c) || curr) + " "), "")
+      .split(" ")
   }
 
   const generateFizzBuzz = () => {
@@ -78,7 +83,7 @@ function Extra() {
       newStr = newStr.substring(1, newStr.length - 1)
     }
 
-    newStr = newStr.split(",").map(css => {
+    let finalStr = newStr.split(",").map(css => {
       let newCss = css.split(":")
 
       //handle incorrect inputs
@@ -94,40 +99,40 @@ function Extra() {
 
       return `${key}: ${value};`
     })
-    console.log(newStr)
-    let result = newStr.join(`\n`)
+    console.log(finalStr)
+    let result = finalStr.join(`\n`)
 
     setCss(result)
 
   }
 
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     console.log(e.target.value)
     setData({ ...data, [e.target.name]: e.target.value })
   }
 
   return (
-    <div className="extras-container">
-
-      <div className="extra-container">
+    <div className="col-start-1 col-end-3 extras-container">
+      
+      <div className="bg-blue-900 flex extra-container">
         <h2>FizzBuzz Generator</h2>
 
         <div className="label_form">
-          <label for="names">Names</label>
+          <label htmlFor="names">Names</label>
           <input name="names" value={data.names} placeholder="Fizz,Buzz,Dazz" onChange={handleChange} />
         </div>
         <div className="label_form">
-          <label for="nums">Numbers</label>
+          <label htmlFor="nums">Numbers</label>
           <input name="nums" value={data.nums} placeholder="3,5,7" onChange={handleChange} />
         </div>
         <div className="label_form">
-          <label for="length">Length</label>
+          <label htmlFor="length">Length</label>
           <input name="length" value={data.length} placeholder="100" onChange={handleChange} />
         </div>
         <button onClick={generateFizzBuzz}>Get Results</button>
         <div>
-          {fizz.map((fb, i) => (
+          {fizz.map((fb: string, i: number) => (
             (i !== fizz.length - 1)
               ? <span style={isNaN(parseInt(fb)) ? { color: "yellow" } : { color: "white" }}>{fb}, </span>
               : <span style={isNaN(parseInt(fb)) ? { color: "yellow" } : { color: "white" }}>{fb}</span>
@@ -136,32 +141,32 @@ function Extra() {
       </div>
 
       
-      <div className="extra-container">
+      <div className="bg-blue-900 flex extra-container">
         <h2>Convert React Inline CSS</h2>
         <div className="label_form">
-          <label for="css">CSS</label>
+          <label htmlFor="css">CSS</label>
           <textarea name="css" value={data.css} placeholder="{ textDecoration: 'none' }" onChange={handleChange} />
-          <label for="css-result">Result</label>
+          <label htmlFor="css-result">Result</label>
           <textarea name="css-result" className="results-box" value={css}>{css}</textarea>
         </div>
         <button onClick={generateNewCSS}>Get Results</button>
       </div>
       
 
-      <div className="extra-container">
+      <div className="bg-blue-900 flex extra-container">
         <h2>Word Replacer</h2>
         <div className="label_form">
-          <label for="original">Text</label>
+          <label htmlFor="original">Text</label>
           <textarea name="original" value={data.original} placeholder="Hello World" onChange={handleChange} />
-          <label for="text-result">Result</label>
+          <label htmlFor="text-result">Result</label>
           <textarea name="text-result" className="results-box" value={text}>{text}</textarea>
         </div>
         <div className="label_form">
-          <label for="old">Replace</label>
+          <label htmlFor="old">Replace</label>
           <input name="old" value={data.old} placeholder="World" onChange={handleChange} />
         </div>
         <div className="label_form">
-          <label for="new">Replace With</label>
+          <label htmlFor="new">Replace With</label>
           <input name="new" value={data.new} placeholder="Friend" onChange={handleChange} />
         </div>
         <button onClick={generateNewText}>Get Results</button>

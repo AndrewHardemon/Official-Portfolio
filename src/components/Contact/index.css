@@ -1,47 +1,45 @@
-.flex-container {
-  display: flex;
-  justify-content: center;
-  width:100%;
+#contact-container {
+  height: 800px;
+  min-width: 800px;
+  margin: 100px 50px;
 }
 
-.contact-container {
-  margin-top: 50px;
-  max-width: 1200px;
-  width:100%;
+#form-container {
+  border: 1px solid #1c1b1b;
+  box-shadow: 0px 0px 17px 0px #b5b5b52b;
+
 }
 
-.email-button-container {
-  display: flex;
-  justify-content: center;
-  /* width: 37rem; */
+
+
+@media screen and (max-width: 827px) {
+  #contact-container {
+    min-width: 500px;
+  }
+  #form-container {
+    width: 100%;
+  }
 }
 
-form {
-  width: 100%;
+@media screen and (max-width: 527px) {
+  #contact-container {
+    min-width: 400px;
+  }
+  #form-container {
+    width: 100%;
+  }
 }
 
-.inner-contact-form {
-  width:40%;
-}
+@media screen and (max-width: 480px) {
+  /* #page-container {
 
-.contact-form input, .contact-form textarea {
-  width: 95vw;
-  /* width: 100%; */
-}
-
-.email-button {
-  text-decoration: none;
-  border: 2px solid black;
-  background-color: lightblue;
-  text-align: center;
-  /* border-radius: 45%; */
-  color:#35435c;
-  padding: 10px;
-  width: 100px;
-  padding: 15px 10px;
-  margin-top: 10px;
-}
-
-.email-button:hover {
-  color: black;
+  } */
+  #contact-container {
+    min-width: 333px;
+    height: 97%;
+    margin: 15px 0px;
+  }
+  #form-container {
+    width: 100%;
+  }
 }

@@ -17,7 +17,7 @@
   text-shadow: 1px 1px black;
   border-bottom: 3px solid black;
   padding-bottom: 3px;
-  font-size: 2vmin;
+  font-size: x-large;
 }
 
 .project-description {
@@ -40,8 +40,8 @@
 }
 
 .project-text:hover {
-  background-color: var(--alpha);
-  opacity: 1;
+  background-color: var(--light);
+  opacity: 0.9;
   border: 10px solid var(--secondary);
 }
 
@@ -51,6 +51,7 @@
 
 .project-text a {
   text-decoration: none;
+
   font-weight: bold;
   color: var(--dark);
   transition: all .3s ease-in-out;
@@ -58,4 +59,8 @@
 
 .project-text a:hover {
   color: var(--darker);
+}
+
+.project-text p {
+  font-size: 1.5rem;
 }
