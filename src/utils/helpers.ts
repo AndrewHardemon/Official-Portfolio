@@ -1,7 +1,7 @@
-export const capFirstLetter = (name) => {
+export const capFirstLetter = (name: string) => {
   return name[0].toUpperCase() + name.slice(1)
 }
 
-export const changeToStandardFormat = (str) => {
-  return str.split("-").map(s => capFirstLetter(s)).join(" ")
+export const changeToStandardFormat = (str: string) => {
+  return str.split("-").map((s: string) => capFirstLetter(s)).join(" ")
 }

@@ -1,9 +1,5 @@
-
-
-
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { capFirstLetter } from "../../utils/helpers"
-import logo from "../../assets/profile/AH-LOGO-NEW.png"
 import "./index.css"
 
 

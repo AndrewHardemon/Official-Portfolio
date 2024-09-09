@@ -1,5 +1,5 @@
-import React from "react";
-import { capFirstLetter } from '../../utils/helpers';
+// import React from "react";
+// import { capFirstLetter } from '../../utils/helpers';
 import "./index.css";
 
 interface PageProps {

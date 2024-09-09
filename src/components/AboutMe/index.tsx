@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+// import React, { useEffect } from "react";
 // import profile from "../../assets/profile/Andrew.jpeg"
 import logo from "../../assets/profile/AH-LOGO-NEW.png"
 // import resume from "../../assets/profile/Andrew-Hardemon-Full-Stack-Web-Developer.pdf"

@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Project from "./Project";
 import vamp from "../../assets/projects/vamp-desktop.png"
 import sfw from "../../assets/projects/safe-for-work.png"
 import recommendations from "../../assets/projects/semi-random-recommendations.png"
-import adventure from "../../assets/projects/text-based-rpg.png"
+// import adventure from "../../assets/projects/text-based-rpg.png"
 import saus from "../../assets/projects/saus_project.png"
 import "./style.css"
 

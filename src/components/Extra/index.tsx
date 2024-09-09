@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 import "./index.css"
 
 
@@ -72,7 +72,7 @@ const Extra: FC = () => {
   }
 
   const generateNewCSS = () => {
-    let str = `{textDecoration:"none", border: "2px solid black", backgroundColor: "lightblue", textAlign:"center", borderRadius: "45%", width: "100px", padding:"8px", marginTop: "10px"}`
+    // let str = `{textDecoration:"none", border: "2px solid black", backgroundColor: "lightblue", textAlign:"center", borderRadius: "45%", width: "100px", padding:"8px", marginTop: "10px"}`
 
     //get css string and trim
     let newStr = data.css.trim()

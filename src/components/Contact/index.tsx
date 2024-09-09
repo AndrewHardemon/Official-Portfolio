@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import { FC, useState } from "react";
 // import nodemailer from "nodemailer";
 import "./index.css"
 
